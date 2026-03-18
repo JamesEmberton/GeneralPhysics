@@ -37,13 +37,13 @@ Feel free to edit these as you see fit.
 '''
 # -----------------------------
 
-beta0 = 0.5 # infection coeff, don't increase too much otherwise it blows up
+beta0 = 1.1 # infection coeff, don't increase too much otherwise it blows up
 gamma = 1 / 14 # 1 / recovery
-D = 0.02 # diff coeff, larger = faster spread, i.e proxy for mobility
+D = 0.15 # diff coeff, larger = faster spread, i.e proxy for mobility
 
 
 dt = 0.1 # timestep (days)
-days = 100 # length of simulation (days)
+days = 150 # length of simulation (days)
 
 
 # ----------------------------- RUNNING CODE ---------------------------
@@ -66,7 +66,25 @@ much.
 '''
 # ------------------------------------------------
 
-density = 0.35*np.ones((N,N))
+# Real densities (people per km^2)
+densities_real = {
+    "Manchester": 4773,
+    "Salford": 2777,
+    "Trafford": 2217,
+    "Stockport": 2338,
+    "Bolton": 2117,
+    "Bury": 1949,
+    "Tameside": 2240,
+    "Oldham": 1701,
+    "Rochdale": 1416,
+    "Wigan": 1750
+}
+
+# Normalise (relative to Manchester)
+max_density = max(densities_real.values())
+densities = {k: v / max_density for k, v in densities_real.items()}
+
+density = 0.2*np.ones((N,N))  # low baseline (rural-ish)
 
 def gaussian(x0,y0,amp,sx,sy=None):
     if sy is None:
@@ -74,53 +92,43 @@ def gaussian(x0,y0,amp,sx,sy=None):
     return amp*np.exp(-(((X-x0)**2)/(2*sx**2) + ((Y-y0)**2)/(2*sy**2)))
 
 
-# Central Manchester–Salford–Trafford 'urban plateau'
+# Core towns 
 # ------------------------------------------------
 
-density += gaussian(0.48,0.55,2.0,0.28,0.20)
+density += gaussian(0.50,0.55,densities["Manchester"],0.04)
+density += gaussian(0.44,0.565,densities["Salford"],0.05)
+density += gaussian(0.48,0.48,densities["Trafford"],0.06)
+
+density += gaussian(0.60,0.38,densities["Stockport"],0.06)
+density += gaussian(0.36,0.72,densities["Bolton"],0.07)
+density += gaussian(0.66,0.70,densities["Oldham"],0.06)
+density += gaussian(0.55,0.86,densities["Rochdale"],0.06)
+density += gaussian(0.45,0.78,densities["Bury"],0.05)
+density += gaussian(0.20,0.60,densities["Wigan"],0.09)
+density += gaussian(0.62,0.57,densities["Tameside"],0.07)
 
 
-# Core density peaks
+# corridors, manchester is continuous
 # ------------------------------------------------
 
-density += gaussian(0.50,0.55,1.8,0.06)   # Manchester centre
-density += gaussian(0.45,0.56,1.2,0.05)   # Salford
-density += gaussian(0.48,0.48,1.0,0.06)   # Trafford
+density += gaussian(0.55,0.47,0.5,0.22,0.04)
+density += gaussian(0.49,0.66,0.4,0.22,0.05)
+density += gaussian(0.61,0.70,0.4,0.20,0.05)
+density += gaussian(0.55,0.78,0.3,0.18,0.04)
 
 
-# Surrounding towns
+# edges less dense, reduce edge density
 # ------------------------------------------------
 
-density += gaussian(0.60,0.38,1.4,0.06)   # Stockport
-density += gaussian(0.36,0.72,1.2,0.07)   # Bolton
-density += gaussian(0.66,0.70,1.2,0.06)   # Oldham
-density += gaussian(0.55,0.86,1.1,0.06)   # Rochdale
-density += gaussian(0.45,0.78,1.0,0.05)   # Bury
-density += gaussian(0.20,0.60,0.9,0.09)   # Wigan
-density += gaussian(0.40,0.37,1.1,0.05)   # Altrincham
+# distance from Manchester centre
+r2 = (X - 0.5)**2 + (Y - 0.55)**2
 
+# smooth radial decay
+edge_drop = np.exp(-r2 / 0.25)
 
-# Development corridors between towns
-# ------------------------------------------------
+density *= edge_drop
 
-density += gaussian(0.50,0.47,0.7,0.22,0.04)   # Manchester–Stockport
-density += gaussian(0.44,0.66,0.6,0.22,0.05)   # Manchester–Bolton
-density += gaussian(0.56,0.70,0.6,0.20,0.05)   # Manchester–Oldham
-density += gaussian(0.50,0.78,0.5,0.18,0.04)   # Oldham–Rochdale
-
-
-# Pennines effect (east side less dense so need to
-# try to model that)
-# ------------------------------------------------
-
-east_drop = 1 - 0.5*(X**1.5)
-density *= east_drop
-
-
-# Small irregularity i.e a bit of randomness to
-# try to simulate the real city
-# ------------------------------------------------
-
+# a bit of randomness to increase realism to city sprawl
 density *= (1 + 0.02*np.random.randn(N,N))
 density = np.clip(density,0,None)
 
@@ -139,7 +147,7 @@ R = np.zeros((N, N))
 
 # single infection centre, centred approximately on
 # Fallowfield for shits and gigs
-I[int(N*0.47):int(N*0.49), int(N*0.49):int(N*0.51)] = 0.01
+I[int(N*0.51):int(N*0.52), int(N*0.53):int(N*0.54)] = 0.01
 S -= I
 
 
@@ -173,6 +181,8 @@ plt.show()
 
 # SIMULATION
 # -----------------------------
+snapshot_times = [4, 8, 14, 22, 34, 48, 70, 100]
+snapshots = []
 
 total_infected = []
 times = []
@@ -190,8 +200,13 @@ for step in range(int(days / dt)):
 
     total_infected.append(np.sum(I))
     times.append(step * dt)
+    
+    # store snapshots
+    for t_snap in snapshot_times:
+        if abs((step*dt) - t_snap) < dt/2:
+            snapshots.append(((step*dt), I.copy()))
 
-    # plot every 5 days
+    # plot every 2 days
     if step % int(2 / dt) == 0:
 
         plt.figure(figsize=(6,5))
@@ -206,34 +221,23 @@ for step in range(int(days / dt)):
         plt.colorbar(im, label="Infected density")
         
         # ---- town labels ----
-        plt.text(N*0.50, N*0.52, "Manchester", color="white", ha="center")
-        plt.text(N*0.44, N*0.56, "Salford", color="white", ha="center")
-        plt.text(N*0.48, N*0.48, "University", color="white", ha="center")
+        plt.text(N*0.50, N*0.55, "Manchester", color="white", ha="center")
+        plt.text(N*0.44, N*0.565, "Salford", color="white", ha="center")
+        plt.text(N*0.38, N*0.48, "Trafford", color="white", ha="center")
         
-        plt.text(N*0.60, N*0.38, "Stockport", color="white", ha="center")
+        plt.text(N*0.55, N*0.38, "Stockport", color="white", ha="center")
         plt.text(N*0.36, N*0.72, "Bolton", color="white", ha="center")
         plt.text(N*0.66, N*0.70, "Oldham", color="white", ha="center")
         plt.text(N*0.55, N*0.86, "Rochdale", color="white", ha="center")
         plt.text(N*0.45, N*0.78, "Bury", color="white", ha="center")
         plt.text(N*0.20, N*0.60, "Wigan", color="white", ha="center")
-        plt.text(N*0.40, N*0.37, "Altrincham", color="white", ha="center")
-        
+        plt.text(N*0.62, N*0.58, "Tameside", color="white", ha="center")
+                
         plt.title(f"Infection spread after {step*dt:.1f} days")
         
         plt.xlabel("x position")
         plt.ylabel("y position")
-        
-# This part I used to get the 6 images I used to make the figure,
-# un-comment it if you want to save the frames at the times
-# specified
-       
-#        valid_times = [2, 6, 16, 28, 40, 60, 90]
-#        for i in valid_times:
-#            if step*dt == i:
-#                plt.savefig(f'time{step*dt}infection.png', 
-#                            bbox_inches = 'tight', dpi = 600)
-
-        
+             
         plt.show()
 
 
@@ -258,3 +262,47 @@ plt.grid(which='minor', color='lightgrey', linestyle='--', linewidth=0.5)
 plt.tight_layout()
 
 plt.show()
+
+
+# Figure creation
+# --------------------------------
+fig, axes = plt.subplots(2, 4, figsize=(14, 6))
+
+axes = axes.flatten()
+
+vmax = max(np.max(snap[1]) for snap in snapshots)
+
+for i, (t, I_snap) in enumerate(snapshots):
+    ax = axes[i]
+    
+    im = ax.imshow(I_snap, cmap="inferno", origin='lower', vmin=0, vmax=vmax)
+    
+    # density contours
+    ax.contour(density, colors="white", linewidths=0.5)
+    
+    if i == 0:
+        ax.text(N*0.50, N*0.55, "Manchester", color="white", ha="center")
+        ax.text(N*0.44, N*0.565, "Salford", color="white", ha="center")
+        ax.text(N*0.38, N*0.48, "Trafford", color="white", ha="center")
+        
+        ax.text(N*0.55, N*0.38, "Stockport", color="white", ha="center")
+        ax.text(N*0.36, N*0.72, "Bolton", color="white", ha="center")
+        ax.text(N*0.66, N*0.70, "Oldham", color="white", ha="center")
+        ax.text(N*0.55, N*0.86, "Rochdale", color="white", ha="center")
+        ax.text(N*0.45, N*0.78, "Bury", color="white", ha="center")
+        ax.text(N*0.20, N*0.60, "Wigan", color="white", ha="center")
+        ax.text(N*0.62, N*0.58, "Tameside", color="white", ha="center")
+    
+    ax.set_title(f"t = {t:.0f} days")
+    ax.set_xticks([])
+    ax.set_yticks([])
+
+# shared colorbar
+# create space on the right
+plt.tight_layout(rect=[0, 0, 0.88, 1])
+fig.subplots_adjust(right=0.88)
+
+cbar_ax = fig.add_axes([0.90, 0.15, 0.02, 0.7])
+cbar = fig.colorbar(im, cax=cbar_ax)
+cbar.set_label("Infected density")
+plt.savefig('Infection_density_figure.png', dpi = 600)
