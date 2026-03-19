@@ -1,0 +1,177 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dreuw & Deselaer's Poster
+% LaTeX Template
+% Version 2.0 (February 18, 2023)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@latextemplates.com)
+% Philippe Dreuw and Thomas Deselaers (https://github.com/deselaers/latex-beamerposter)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+% NOTE: The bibliography needs to be compiled using the bibtex engine.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer} % Use the beamer base class
+
+\usepackage[
+	orientation=portrait, % Portrait orientation
+	size=a1, % Paper size
+	scale=1.5, % Scale, it's important to adjust this so your content fits nicely in the template
+]{beamerposter} % Use the beamerposter package to create the layout
+
+\usetheme{I6pd2} % Use the I6pd2 theme supplied with this template
+
+\usepackage{changepage} % Required for temporarily indenting text blocks
+
+\usepackage{amsmath,amsthm,amssymb,latexsym} % For including math equations, theorems, symbols, etc
+
+\usepackage{gfsdidot} % Use the GFS Didot font
+
+\usepackage{booktabs} % Top and bottom rules for tables
+
+\usefonttheme{professionalfonts}
+%\usefonttheme[onlymath]{structureitalicserif} % Uses Computer Modern for maths
+
+\graphicspath{{Figures/}} % Location of figure images
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\title{\LARGE Can disease spread be modelled by a diffusion equation?} % Poster title
+
+\author{Oliver Clift\textsuperscript{1}, James Emberton\textsuperscript{1}, Isaac Millen\textsuperscript{1}, Nicholas Mitchiner\textsuperscript{1}, Edward Phillips\textsuperscript{1} and Dominik Szablonski\textsuperscript{1}} % Author(s)
+
+\institute{\textsuperscript{1}Department of Physics, University of Manchester} % Institution(s)
+
+%----------------------------------------------------------------------------------------
+%	FOOTER TEXT
+%----------------------------------------------------------------------------------------
+
+\newcommand{\leftfoot}{} % Left footer text
+
+\newcommand{\rightfoot}{} % Right footer text
+
+%\setbeamertemplate{footline}{} % Uncomment this line to hide the footer
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+	
+\begin{frame}[t] % The whole poster is enclosed in one beamer frame, the [t] parameter aligns everything to the top
+
+\begin{columns}[t] % Begin multi-column layout, the [t] parameter aligns each column's content to the top
+
+\begin{column}{0.02\textwidth}\end{column} % Empty column for horizontal whitespace
+
+\end{columns}
+
+\hspace{0.015\textwidth}%
+\begin{minipage}{0.97\textwidth}
+\begin{block}{Abstract}
+	In this study, we modelled the spread of disease in Manchester, comparing this to Monte-Carlo simulations and pre-lockdown Covid data. This model assumed no lockdowns were put in place, blah blah blah. Our study successfully/unsuccessfully modelled spatial disease spread. Could be improved by considering x y z.
+\end{block}
+\end{minipage}
+
+\begin{columns}[t]
+\begin{column}{0.02\textwidth}\end{column}
+
+\begin{column}{0.465\textwidth} % Start the first content column
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+            
+\begin{block}{Introduction}
+	Modelling disease spread is difficult, want better predicitions so governments can make plans.
+	
+	\bigskip
+	
+	When first thinking about this problem, we considered x y z.
+\end{block}
+
+%----------------------------------------------------------------------------------------
+%	MATERIALS
+%----------------------------------------------------------------------------------------
+
+\begin{block}{Theory}
+	By thinking really really hard we thought of the equation:
+	\begin{equation}
+		E = mc^2 + AI.
+	\end{equation}
+\end{block}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of the first column
+
+\begin{column}{0.03\textwidth}\end{column} % Empty column for horizontal whitespace
+ 
+\begin{column}{0.465\textwidth} % Start the second content column
+
+%----------------------------------------------------------------------------------------
+%	RESULTS
+%----------------------------------------------------------------------------------------
+
+\begin{block}{Results: Simulation vs Data}
+	Put things here
+\end{block}
+
+%------------------------------------------------
+
+\begin{block}{Results: Figures}
+	\begin{figure}
+		\includegraphics[width=\linewidth]{time.jpg}
+		\caption{Disease spreading over time in Greater Manchester.}
+	\end{figure}
+\end{block}
+
+\begin{block}{Discussion}
+	This worked/didn't work. This will for sure effect something.
+\end{block}
+
+%----------------------------------------------------------------------------------------
+%	CONCLUSIONS
+%----------------------------------------------------------------------------------------
+
+\begin{block}{Conclusions}
+	We things out ig. 
+\end{block}
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+\begin{block}{References}
+	\nocite{*} % Insert publications even if they are not cited in the poster
+	\small % Reduce font size
+	\vspace{-1ex} % Pull up slightly
+	\bibliographystyle{unsrt} % Bibliography style
+	\bibliography{sample.bib} % Bibliography file
+\end{block}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of the second column
+
+\begin{column}{0.02\textwidth}\end{column} % Empty column for horizontal whitespace
+
+\end{columns} % End of all the columns in the poster
+
+\end{frame} % End of the enclosing frame
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
