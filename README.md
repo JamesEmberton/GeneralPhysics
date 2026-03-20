@@ -10,4 +10,4 @@
 ## Contributions (Please add your name and your contribution)
 - James - Programmed reaction-diffusion model; assumptions.
 - Dominik - Created poster template; wrote introduction and abstract.
-- Nicholas - Researched transmissiblity param + 
+- Nicholas - Researched transmissiblity param + pop. density distribution
