@@ -4,4 +4,5 @@
 
 
 ***
-## Contributions
+## Contributions (Please add your name and your contribution)
+James - Programmed reaction-diffusion model; assumptions.
