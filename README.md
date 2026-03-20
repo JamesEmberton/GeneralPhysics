@@ -4,7 +4,6 @@
 - Write theory
 - Write conclusion
 - Gather references - Nicholas - pls send me links and i'll sort
-- Nicholas - Write up results 
 
 ***
 ## Contributions (Please add your name and your contribution)
