@@ -34,7 +34,7 @@
 \usepackage{changepage} % Required for temporarily indenting text blocks
 
 \usepackage{amsmath,amsthm,amssymb,latexsym} % For including math equations, theorems, symbols, etc
-
+\usepackage{physics}
 \usepackage{gfsdidot} % Use the GFS Didot font
 
 \usepackage{booktabs} % Top and bottom rules for tables
@@ -79,7 +79,7 @@
 \hspace{0.015\textwidth}%
 \begin{minipage}{0.97\textwidth}
 \begin{block}{Abstract}
-	In this study, we modelled the spread of disease in Manchester, comparing this to Monte-Carlo simulations and pre-lockdown Covid data. This model assumed no lockdowns were put in place, blah blah blah. Our study successfully/unsuccessfully modelled spatial disease spread. Could be improved by considering x y z.
+	In this study, we modelled the spread of disease in Manchester through a reaction-diffusion equation, comparing this to pre-lockdown Covid data. The main assumptions of the model were a constant population density, a recovery time of 14 days, and effects on immunocompromised people is ignored. The Euler method is used to solve the equation computationally. Our study successfully/unsuccessfully modelled spatial disease spread when comparing to pre-pandemic Covid data, but only the initial spread. The model could be improved by implementing random-walks to model more random behaviour, modelling more outbreak centres, or accounting for disease spread reduction.
 \end{block}
 \end{minipage}
 
@@ -105,11 +105,30 @@
 %	MATERIALS
 %----------------------------------------------------------------------------------------
 
-\begin{block}{Theory}
-	By thinking really really hard we thought of the equation:
+\begin{block}{Theory - Reaction-Diffusion Equation} 
+	We attempt to model the spread of disease via a reaction-diffusion equation,
 	\begin{equation}
-		E = mc^2 + AI.
+		\pdv{I}{t} = D\grad^2I + \beta(x,y)SI 	- \gamma I,
 	\end{equation}
+	which models spatial densities $\rho$, which are parametrised such that,
+	\begin{equation}
+		\rho = S + I + R,
+	\end{equation}
+	where,
+	\begin{itemize}
+		\item $S(x,y,t)$: Susceptible population.
+		\begin{itemize}
+			\item Those who can catch disease.
+		\end{itemize}
+		\item $I(x,y,t)$: Infected population.
+		\begin{itemize}
+			\item Those who have the disease.
+		\end{itemize}
+		\item $R(x,y,t)$: Recovered population.
+		\begin{itemize}
+			\item Those who are no longer infected.
+		\end{itemize}
+	\end{itemize}
 \end{block}
 
 %----------------------------------------------------------------------------------------
