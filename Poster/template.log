@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (format=lualatex 2025.9.21)  20 MAR 2026 13:36
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (format=lualatex 2025.9.21)  24 MAR 2026 20:12
  restricted system commands enabled.
 **template.tex
 (./template.tex
@@ -809,7 +809,7 @@ Package beamerposter Info: checking size input, please wait. on input line 130.
 Package beamerposter Info: the input a1\ 2\ was correct, we proceed. on input l
 ine 130.
 Package beamerposter Info: finished size input check. on input line 130.
-Package beamerposter Info: myfontscale=1.25 on input line 130.
+Package beamerposter Info: myfontscale=1 on input line 130.
  ( FP-UPN ( FP-MUL )
 ( FP-ROUND ) )
 \tmp=\dimen294
@@ -817,7 +817,7 @@ Package beamerposter Info: paperwidth=1690.09352pt, paperheight=2392.87694pt on
  input line 173.
 Package beamerposter Info: textwidth=1661.64076pt, textheight=2364.42418pt on i
 nput line 174.
-Package beamerposter Info: fontscale=0.70710678, myfontscale=0.88 on input line
+Package beamerposter Info: fontscale=0.70710678, myfontscale=0.71 on input line
  175.
  ( FP-UPN ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL )
 ( FP-ROUND ) ) ( FP-UPN ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL )
@@ -1213,18 +1213,23 @@ Package luatex.def Info: Figures/logo.png  used on input line 69.
 (luatex.def)             Requested size: 422.52338pt x 53.46254pt.
 File: Figures/logo.png Graphic file (type png)
 <use Figures/logo.png>
-Package luatex.def Info: Figures/logo.png  used on input line 192.
+Package luatex.def Info: Figures/logo.png  used on input line 202.
 (luatex.def)             Requested size: 422.52338pt x 53.46254pt.
-<Figures/time.jpg, id=14, 1606.0pt x 687.56876pt>
+<Figures/time.jpg, id=15, 1606.0pt x 687.56876pt>
 File: Figures/time.jpg Graphic file (type jpg)
 <use Figures/time.jpg>
-Package luatex.def Info: Figures/time.jpg  used on input line 192.
-(luatex.def)             Requested size: 740.55728pt x 317.06183pt.
- (./template.bbl)
+Package luatex.def Info: Figures/time.jpg  used on input line 202.
+(luatex.def)             Requested size: 744.20352pt x 318.61456pt.
+ (./template.bbl
+
+LaTeX Font Warning: Font shape `TU/pxss/m/it' undefined
+(Font)              using `TU/pxss/m/n' instead on input line 7.
+
+)
 
 File: Figures/logo.png Graphic file (type png)
 <use Figures/logo.png>
-Package luatex.def Info: Figures/logo.png  used on input line 192.
+Package luatex.def Info: Figures/logo.png  used on input line 202.
 (luatex.def)             Requested size: 422.52338pt x 53.46254pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -1252,32 +1257,34 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 26077 strings out of 475512
- 156265,1144653 words of node,token memory allocated
- 38948 words of node memory still in use:
-   295 hlist, 37 vlist, 56 rule, 220 disc, 44 local_par, 42 math, 998 glue, 223 
-kern, 142 penalty, 2720 glyph, 770 attribute, 61 glue_spec, 770 attribute_list, 
-4 write, 194 pdf_literal, 212 pdf_colorstack, 2 pdf_setmatrix, 2 pdf_save, 2 pdf
-_restore nodes
-   avail lists: 2:556,3:1062,4:831,5:717,6:147,7:11488,8:29,9:1365,10:30,11:660
- 47975 multiletter control sequences out of 65536+600000
- 321 fonts using 21376495 bytes
- 128i,20n,116p,681b,1192s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 26128 strings out of 475512
+ 305239,1144653 words of node,token memory allocated
+ 69181 words of node memory still in use:
+   354 hlist, 37 vlist, 56 rule, 445 disc, 57 local_par, 44 math, 1637 glue, 411
+ kern, 179 penalty, 5713 glyph, 877 attribute, 61 glue_spec, 877 attribute_list,
+ 4 write, 194 pdf_literal, 2 pdf_start_link, 2 pdf_end_link, 4 pdf_dest, 2 pdf_a
+ction, 252 pdf_colorstack, 2 pdf_setmatrix, 2 pdf_save, 2 pdf_restore nodes
+   avail lists: 1:1,2:556,3:1180,4:951,5:1281,6:186,7:22391,8:29,9:1561,10:38,11
+:1335
+ 48022 multiletter control sequences out of 65536+600000
+ 321 fonts using 21376815 bytes
+ 128i,20n,116p,927b,1192s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/gfsdidot/gfsudidotmath.enc}{/usr/
 share/texlive/texmf-dist/fonts/enc/dvips/gfsdidot/didotOT1.enc}{/usr/share/texli
 ve/texmf-dist/fonts/enc/dvips/gfsdidot/didot.enc}{/usr/share/texlive/texmf-dist/
 fonts/enc/dvips/gfsdidot/gpdidoti.enc}</usr/share/texmf/fonts/opentype/public/lm
-/lmroman17-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/gfsdido
-t/GFSDidot-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/gfsdidot
-/GFSDidot.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/gfsdidot/GFSOlga
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pxfonts/pxbsy.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/pxfonts/pxsy.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/pxfonts/pxsya.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/pxfonts/rpxmi.pfb>
-Output written on template.pdf (1 page, 246358 bytes).
+/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman17-regu
+lar.otf></usr/share/texlive/texmf-dist/fonts/type1/public/gfsdidot/GFSDidot-Ital
+ic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/gfsdidot/GFSDidot.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/gfsdidot/GFSOlga.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/pxfonts/pxbsy.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/pxfonts/pxsy.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/pxfonts/pxsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/pxfonts/rpxmi.pfb>
+Output written on template.pdf (1 page, 258903 bytes).
 
-PDF statistics: 67 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 131072)
+PDF statistics: 81 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

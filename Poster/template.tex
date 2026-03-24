@@ -26,7 +26,7 @@
 \usepackage[
 	orientation=portrait, % Portrait orientation
 	size=a1, % Paper size
-	scale=1.25, % Scale, it's important to adjust this so your content fits nicely in the template
+	scale=1, % Scale, it's important to adjust this so your content fits nicely in the template
 ]{beamerposter} % Use the beamerposter package to create the layout
 
 \usetheme{I6pd2} % Use the I6pd2 theme supplied with this template
@@ -144,7 +144,7 @@
 %----------------------------------------------------------------------------------------
 
 \begin{block}{Results: Simulation vs Data}
-	Using the parameters of transmissibility taking into account weather conditions $\beta_0 =0.48 $ \cite{2021} and using the spatial density given for each county of Greater Manchester from the March 2021 Census data [reference database here]. Comparing the two diagrams of the simulated spread over many days and the actual spread can see the pattern closely aligns in the earlier days of the initial days while the graphs diverage at the later times with the actual distribution of infected people being less uniform and scattered both in the centre and edges whereas the model shows a wave like distribution in which only infection left on the outer edges of Greater Manchester. 
+	Using the parameters of transmissibility taking into account weather conditions $\beta_0 =0.48 $ \cite{TALIB2021} and using the spatial density given for each county of Greater Manchester from the March 2021 Census data [reference database here]. Comparing the two diagrams of the simulated spread over many days and the actual spread can see the pattern closely aligns in the earlier days of the initial days while the graphs diverge at the later times with the actual distribution of infected people being less uniform and scattered both in the centre and edges whereas the model shows a wave like distribution in which only infection left on the outer edges of Greater Manchester. 
 	Put things here - actual distributed to be added.
 \end{block}
 
@@ -158,9 +158,13 @@
 \end{block}
 
 \begin{block}{Discussion}
-	We found that though our model was successful at modelling the initial spread of the Covid 19 pandemic. In particular, the exponential growth seen in FigXYZ matches near perfectly data seen in [1]. However, after this, the model starts to diverge from real life data. This is likely because we made the assumption that people’s behaviour wouldn’t change when infected. In reality, as time went on, and more was understood about Covid, people started to self isolate when they first experienced symptoms, and the first lockdowns started to occur in March 2020 [2]. However, this doesn’t make the idea of using diffusion-reaction useless or invalid in all cases. Instead, it implies that the best use of such a model is to predict what would happen should the spread of the virus not be contained. 
+We found that though our model was successful at modelling the initial spread of the Covid 19 pandemic. In particular, the exponential growth seen in FigXYZ matches near perfectly data seen in [1]. However, after this, the model starts to diverge from real life data. This is likely because we made the assumption that people’s behaviour wouldn’t change when infected. In reality, as time went on, and more was understood about Covid, people started to self isolate when they first experienced symptoms, and the first lockdowns started to occur in March 2020 [2]. However, this doesn’t make the idea of using diffusion-reaction useless or invalid in all cases. Instead, it implies that the best use of such a model is to predict what would happen should the spread of the virus not be contained. 
 
-Our model also fails to account for individuals travelling long distances, instead assuming that everyone remains in roughly the same location. In reality, this isn’t true for multiple reasons. Firstly, as a big city, people commute into central Manchester from the likes of Salford, Stockport, and Tameside both to shop and work. These people are likely to get infected in Manchester and travel back to their homes, causing the pandemic to spread to outer regions sooner than in the model. Greater Manchester isn’t closed either with both national and international travel happening in and out daily. Whilst an infected person leaving Manchester wouldn’t change much, at least outside of the very early days, an infected person entering Manchester could lead to a new infection centre. In reality, it turns out that, “connectivity matters more than density in the spread of COVID-19”.[3]
+\bigskip
+
+Our model also fails to account for individuals travelling long distances, instead assuming that everyone remains in roughly the same location. In reality, this isn’t true for multiple reasons. Firstly, as a big city, people commute into central Manchester from the likes of Salford, Stockport, and Tameside both to shop and work. These people are likely to get infected in Manchester and travel back to their homes, causing the pandemic to spread to outer regions sooner than in the model. Greater Manchester isn’t closed either with both national and international travel happening in and out daily. Whilst an infected person leaving Manchester wouldn’t change much, at least outside of the very early days, an infected person entering Manchester could lead to a new infection centre. In reality, it turns out that, “connectivity matters more than density in the spread of COVID-19” \cite{LAROZE2021}.
+
+\bigskip
 
 A diffusion-reaction model also fails to account for the virus, “Sticking around”. In our model, after around 60 days the area where our “patient zero” first appeared had been near completely cleared out as everyone in the area had caught the illness and recovered. In reality, not everyone in an area gets ill immediately, so the illness will stay around for longer rather than just spread to other areas. Despite that, the idea that a virus may exhaust all of its potential inhabitants in an area does have historical backing, though this is more common without lockdown protocol.
 PARAGRAPH NEEDS SOURCING AND NEEDS DATA.
@@ -171,9 +175,9 @@ PARAGRAPH NEEDS SOURCING AND NEEDS DATA.
 %	CONCLUSIONS
 %----------------------------------------------------------------------------------------
 
-\begin{block}{Conclusions}
-	We things out ig. 
-	In conclusion, while the diffusion-reaction equation was able to more accurately model the beginnning of a disease outbreak the model starts to diverge at later times. This is primarily due to the simplifying assumptions that were made for our model. A better model would take into account the individual motion of people using a stochastic model such as a Monte-Carlo method to more accurately reflect this random walk.
+\begin{block}{Conclusions} 
+	In conclusion, while the diffusion-reaction equation was able to more accurately model the beginning of a disease outbreak the model starts to diverge at later times. This is primarily due to the simplifying assumptions that were made for our model. A better model would take into account the individual motion of people using a stochastic model such as a Monte-Carlo method to more accurately reflect this random walk.
+\end{block}
 %----------------------------------------------------------------------------------------
 %	REFERENCES
 %----------------------------------------------------------------------------------------

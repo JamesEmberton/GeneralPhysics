@@ -1,5 +1,46 @@
-[0] Config.pm:308> INFO - This is Biber 2.20
-[0] Config.pm:311> INFO - Logfile is 'template.blg'
-[120] biber:340> INFO - === Thu Mar 19, 2026, 11:16:01
-[311] Utils.pm:399> ERROR - Cannot find 'template.bcf'!
-[311] Biber.pm:136> INFO - ERRORS: 1
+This is BibTeX, Version 0.99d (TeX Live 2025/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: template.aux
+The style file: unsrt.bst
+Database file #1: sample.bib
+You've used 4 entries,
+            1791 wiz_defined-function locations,
+            475 strings with 4050 characters,
+and the built_in function-call counts, 727 in all, are:
+= -- 62
+> -- 32
+< -- 0
++ -- 12
+- -- 8
+* -- 42
+:= -- 128
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 4
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 35
+empty$ -- 72
+format.name$ -- 8
+if$ -- 160
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 5
+newline$ -- 23
+num.names$ -- 4
+pop$ -- 9
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 17
+stack$ -- 0
+substring$ -- 21
+swap$ -- 4
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 5
+width$ -- 5
+write$ -- 46
