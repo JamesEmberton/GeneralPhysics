@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (format=lualatex 2025.9.21)  25 MAR 2026 15:21
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (format=lualatex 2025.9.21)  25 MAR 2026 15:24
  restricted system commands enabled.
 **template.tex
 (./template.tex
@@ -1213,18 +1213,18 @@ Package luatex.def Info: Figures/logo.png  used on input line 69.
 (luatex.def)             Requested size: 422.52338pt x 53.46254pt.
 File: Figures/logo.png Graphic file (type png)
 <use Figures/logo.png>
-Package luatex.def Info: Figures/logo.png  used on input line 221.
+Package luatex.def Info: Figures/logo.png  used on input line 228.
 (luatex.def)             Requested size: 422.52338pt x 53.46254pt.
 <infection_spread_model_v3.png, id=18, 950.04938pt x 426.09187pt>
 File: infection_spread_model_v3.png Graphic file (type png)
 <use infection_spread_model_v3.png>
-Package luatex.def Info: infection_spread_model_v3.png  used on input line 221.
+Package luatex.def Info: infection_spread_model_v3.png  used on input line 228.
 
 (luatex.def)             Requested size: 744.20352pt x 333.78717pt.
-<Bostton_auto_sprawl_figure.png, id=19, 637.63219pt x 202.50656pt>
+<Bostton_auto_sprawl_figure.png, id=23, 637.63219pt x 202.50656pt>
 File: Bostton_auto_sprawl_figure.png Graphic file (type png)
 <use Bostton_auto_sprawl_figure.png>
-Package luatex.def Info: Bostton_auto_sprawl_figure.png  used on input line 221
+Package luatex.def Info: Bostton_auto_sprawl_figure.png  used on input line 228
 .
 (luatex.def)             Requested size: 744.20352pt x 236.35387pt.
  (./template.bbl
@@ -1236,7 +1236,7 @@ LaTeX Font Warning: Font shape `TU/pxss/m/it' undefined
 
 File: Figures/logo.png Graphic file (type png)
 <use Figures/logo.png>
-Package luatex.def Info: Figures/logo.png  used on input line 221.
+Package luatex.def Info: Figures/logo.png  used on input line 228.
 (luatex.def)             Requested size: 422.52338pt x 53.46254pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -1265,14 +1265,15 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 
 Here is how much of LuaTeX's memory you used:
  26238 strings out of 475512
- 381553,1144653 words of node,token memory allocated
- 79602 words of node memory still in use:
-   406 hlist, 41 vlist, 63 rule, 524 disc, 64 local_par, 56 math, 1861 glue, 472
- kern, 218 penalty, 6561 glyph, 1019 attribute, 61 glue_spec, 1019 attribute_lis
-t, 8 write, 204 pdf_literal, 9 pdf_start_link, 9 pdf_end_link, 8 pdf_dest, 9 pdf
-_action, 290 pdf_colorstack, 3 pdf_setmatrix, 3 pdf_save, 3 pdf_restore nodes
-   avail lists: 2:556,3:1370,4:1065,5:1464,6:207,7:25689,8:29,9:1786,10:38,11:15
-73
+ 381557,1144653 words of node,token memory allocated
+ 87786 words of node memory still in use:
+   435 hlist, 43 vlist, 69 rule, 581 disc, 66 local_par, 62 math, 2049 glue, 517
+ kern, 231 penalty, 7297 glyph, 1085 attribute, 61 glue_spec, 1085 attribute_lis
+t, 8 write, 214 pdf_literal, 13 pdf_start_link, 13 pdf_end_link, 8 pdf_dest, 13 
+pdf_action, 308 pdf_colorstack, 3 pdf_setmatrix, 3 pdf_save, 3 pdf_restore nodes
+
+   avail lists: 2:556,3:1451,4:1119,5:1599,6:213,7:28479,8:29,9:1909,10:38,11:17
+44
  48067 multiletter control sequences out of 65536+600000
  405 fonts using 26942335 bytes
  128i,20n,116p,938b,1192s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1288,10 +1289,10 @@ e/texlive/texmf-dist/fonts/type1/public/pxfonts/pxbsy.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/pxfonts/pxsy.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/pxfonts/pxsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/pxfonts/rpxmi.pfb>
-Output written on template.pdf (1 page, 1240022 bytes).
+Output written on template.pdf (1 page, 1240620 bytes).
 
-PDF statistics: 96 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+PDF statistics: 100 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
  11 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 
