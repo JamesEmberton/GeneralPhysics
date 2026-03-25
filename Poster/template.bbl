@@ -6,13 +6,22 @@ Talib Dbouk and Dimitris Drikakis.
   dynamics.
 \newblock {\em Physics of Fluids}, 33, 2 2021.
 
-\bibitem{FRY2021104400}
-Richard Fry, Joe Hollinghurst, Helen~R Stagg, Daniel~A Thompson, Claudio
-  Fronterre, Chris Orton, Ronan~A Lyons, David~V Ford, Aziz Sheikh, and Peter~J
-  Diggle.
-\newblock Real-time spatial health surveillance: Mapping the uk covid-19
-  epidemic.
-\newblock {\em International Journal of Medical Informatics}, 149:104400, 2021.
+\bibitem{NHS2023}
+be%20infectious%20for%20up%20to%2010%20days
+  https://www.nhs.uk/conditions/covid-19/how-to-avoid-catching-and-spreading-covid
+  19/#:~:text=Many%20people%20will%20no%20longer%20be%20infectious.
+\newblock {\em {How to avoid catching and spreading COVID-19 infection}}.
+\newblock {NHS}, March.
+
+\bibitem{CENSUS2021}
+Office for National~Statistics.
+\newblock Census-based statistics uk: 2021, 2021.
+
+\bibitem{KUMAR2021}
+Nishant Kumar, Jimi Oke, and Bat-hen Nahmias~Biran.
+\newblock Activity-based epidemic propagation and contact network scaling in
+  auto-dependent metropolitan areas.
+\newblock {\em Scientific Reports}, 11, 11 2021.
 
 \bibitem{iog}
 Institute for Government~analysis.

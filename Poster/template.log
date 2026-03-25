@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.3.25)  25 MAR 2026 15:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.3.25)  25 MAR 2026 15:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1712,77 +1712,30 @@ File: Figures/logo.png Graphic file (type png)
 <use Figures/logo.png>
 Package pdftex.def Info: Figures/logo.png  used on input line 219.
 (pdftex.def)             Requested size: 422.52338pt x 53.46254pt.
-
-
-LaTeX Warning: Citation `NHS2023' on page 1 undefined on input line 219.
-
-
-LaTeX Warning: Citation `CENSUS2021' on page 1 undefined on input line 219.
-
-
-LaTeX Warning: Citation `KUMAR2021' on page 1 undefined on input line 219.
-
-<infection_spread_model_v3.png, id=15, 950.04938pt x 426.09187pt>
+<infection_spread_model_v3.png, id=18, 950.04938pt x 426.09187pt>
 File: infection_spread_model_v3.png Graphic file (type png)
 <use infection_spread_model_v3.png>
 Package pdftex.def Info: infection_spread_model_v3.png  used on input line 219.
 
 (pdftex.def)             Requested size: 740.9541pt x 332.32431pt.
-<Bostton_auto_sprawl_figure.png, id=16, 637.63219pt x 202.50656pt>
+<Bostton_auto_sprawl_figure.png, id=19, 637.63219pt x 202.50656pt>
 File: Bostton_auto_sprawl_figure.png Graphic file (type png)
 <use Bostton_auto_sprawl_figure.png>
 Package pdftex.def Info: Bostton_auto_sprawl_figure.png  used on input line 219
 .
 (pdftex.def)             Requested size: 740.9541pt x 235.32181pt.
-! Missing $ inserted.
-<inserted text> 
-                $
-l.219 \end{frame}
-                  % End of the enclosing frame
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
+(template.bbl
+! You can't use `macro parameter character #' in horizontal mode.
+l.12   19/#
+           :~:text=Many%20people%20will%20no%20longer%20be%20infectious.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
-LaTeX Warning: Citation `KUMAR2021' on page 1 undefined on input line 219.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.219 \end{frame}
-                  % End of the enclosing frame
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.219 \end{frame}
-                  % End of the enclosing frame
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-LaTeX Warning: Citation `KUMAR2021' on page 1 undefined on input line 219.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.219 \end{frame}
-                  % End of the enclosing frame
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 219--219
-[]\OT1/pxss/m/n/14.73 Figure 2:[] COVID$[]\OT1/udidot/m/n/14.73 9\OML/udidot/m/
-it/14.73 infection\OT1/udidot/m/n/14.73 "\OML/udidot/m/it/14.73 Heatmapofinfect
-ed\OT1/udidot/m/n/14.73 (\OML/udidot/m/it/14.73 exposedandinfectious\OT1/udidot
-/m/n/14.73 )\OML/udidot/m/it/14.73 individualseverysevendays \OT1/udidot/m/n/14
-.73 :
- []
-
-(template.bbl)
-Overfull \vbox (435.57062pt too high) detected at line 219
+)
+Overfull \vbox (521.45187pt too high) detected at line 219
  []
 
 File: Figures/logo.png Graphic file (type png)
@@ -1812,19 +1765,15 @@ el_v3.png> <./Bostton_auto_sprawl_figure.png>]
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25899 strings out of 467871
- 491204 string characters out of 5416924
- 962836 words of memory out of 5000000
- 54124 multiletter control sequences out of 15000+600000
- 722751 words of font info for 268 fonts, out of 8000000 for 9000
+ 25900 strings out of 467871
+ 491245 string characters out of 5416924
+ 965599 words of memory out of 5000000
+ 54127 multiletter control sequences out of 15000+600000
+ 719485 words of font info for 263 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,20n,123p,941b,1119s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Nicholas/AppData/Local/Programs/MiKTeX/fonts/type1/public/gfsdidot/
@@ -1839,9 +1788,9 @@ icholas/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/U
 sers/Nicholas/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb
 ><C:/Users/Nicholas/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr
 8a.pfb>
-Output written on template.pdf (1 page, 1267895 bytes).
+Output written on template.pdf (1 page, 1266706 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
+ 106 PDF objects out of 1000 (max. 8388607)
+ 11 named destinations out of 1000 (max. 500000)
  58 words of extra memory for PDF output out of 10000 (max. 10000000)
 
