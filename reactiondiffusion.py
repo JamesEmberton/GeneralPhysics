@@ -31,18 +31,18 @@ mobility, will increase the rate of spread with increasing D.
 
 Default values I chose after some tinkering (so not at all
 particularly scientific):
-beta0 = 0.5; gamma = 1/14; D = 0.02
+beta0 = 1.1; gamma = 1/14; D = 0.15
 
 Feel free to edit these as you see fit.
 '''
 # -----------------------------
 
-beta0 = 1.1 # infection coeff, don't increase too much otherwise it blows up
-gamma = 1 / 14 # 1 / recovery
-D = 0.15 # diff coeff, larger = faster spread, i.e proxy for mobility
+beta0 = 0.48 # infection coeff, don't increase too much otherwise it blows up
+gamma = 1 / 7 # 1 / recovery
+D = 0.5 # diff coeff, larger = faster spread, i.e proxy for mobility
 
 
-dt = 0.1 # timestep (days)
+dt = 0.05 # timestep (days)
 days = 150 # length of simulation (days)
 
 
@@ -147,7 +147,7 @@ R = np.zeros((N, N))
 
 # single infection centre, centred approximately on
 # Fallowfield for shits and gigs
-I[int(N*0.51):int(N*0.52), int(N*0.53):int(N*0.54)] = 0.01
+I[int(N*0.51):int(N*0.52), int(N*0.53):int(N*0.54)] = 0.02
 S -= I
 
 
@@ -181,7 +181,7 @@ plt.show()
 
 # SIMULATION
 # -----------------------------
-snapshot_times = [4, 8, 14, 22, 34, 48, 70, 100]
+snapshot_times = [4, 8, 12, 18, 26, 36, 50, 70]
 snapshots = []
 
 total_infected = []
@@ -198,7 +198,7 @@ for step in range(int(days / dt)):
     I += (diffusion + infection - recovery) * dt
     R += recovery * dt
 
-    total_infected.append(np.sum(I))
+    total_infected.append(np.sum(I * max_density * 0.8))
     times.append(step * dt)
     
     # store snapshots
@@ -306,3 +306,5 @@ cbar_ax = fig.add_axes([0.90, 0.15, 0.02, 0.7])
 cbar = fig.colorbar(im, cax=cbar_ax)
 cbar.set_label("Infected density")
 plt.savefig('Infection_density_figure.png', dpi = 600)
+
+print(density)
