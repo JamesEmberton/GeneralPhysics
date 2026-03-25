@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (format=lualatex 2025.9.21)  25 MAR 2026 13:02
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (format=lualatex 2025.9.21)  25 MAR 2026 15:07
  restricted system commands enabled.
 **template.tex
 (./template.tex
@@ -1213,19 +1213,19 @@ Package luatex.def Info: Figures/logo.png  used on input line 69.
 (luatex.def)             Requested size: 422.52338pt x 53.46254pt.
 File: Figures/logo.png Graphic file (type png)
 <use Figures/logo.png>
-Package luatex.def Info: Figures/logo.png  used on input line 210.
+Package luatex.def Info: Figures/logo.png  used on input line 209.
 (luatex.def)             Requested size: 422.52338pt x 53.46254pt.
-<Figures/Infection_density_figure2.png, id=15, 1011.78pt x 433.62pt>
+<Figures/Infection_density_figure2.png, id=16, 1011.78pt x 433.62pt>
 File: Figures/Infection_density_figure2.png Graphic file (type png)
 <use Figures/Infection_density_figure2.png>
 Package luatex.def Info: Figures/Infection_density_figure2.png  used on input l
-ine 210.
+ine 209.
 (luatex.def)             Requested size: 744.20352pt x 318.94838pt.
-<Figures/Bostton_auto_sprawl_figure.png, id=16, 637.63219pt x 202.50656pt>
+<Figures/Bostton_auto_sprawl_figure.png, id=17, 637.63219pt x 202.50656pt>
 File: Figures/Bostton_auto_sprawl_figure.png Graphic file (type png)
 <use Figures/Bostton_auto_sprawl_figure.png>
 Package luatex.def Info: Figures/Bostton_auto_sprawl_figure.png  used on input 
-line 210.
+line 209.
 (luatex.def)             Requested size: 744.20352pt x 236.35387pt.
  (./template.bbl
 
@@ -1236,7 +1236,7 @@ LaTeX Font Warning: Font shape `TU/pxss/m/it' undefined
 
 File: Figures/logo.png Graphic file (type png)
 <use Figures/logo.png>
-Package luatex.def Info: Figures/logo.png  used on input line 210.
+Package luatex.def Info: Figures/logo.png  used on input line 209.
 (luatex.def)             Requested size: 422.52338pt x 53.46254pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -1266,16 +1266,16 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 26140 strings out of 475512
- 305230,1144653 words of node,token memory allocated
- 74096 words of node memory still in use:
-   379 hlist, 39 vlist, 63 rule, 484 disc, 58 local_par, 44 math, 1740 glue, 445
- kern, 197 penalty, 6111 glyph, 943 attribute, 61 glue_spec, 943 attribute_list,
- 4 write, 204 pdf_literal, 4 pdf_start_link, 4 pdf_end_link, 4 pdf_dest, 4 pdf_a
-ction, 278 pdf_colorstack, 3 pdf_setmatrix, 3 pdf_save, 3 pdf_restore nodes
-   avail lists: 1:2,2:556,3:1279,4:1029,5:1383,6:189,7:23894,8:29,9:1669,10:38,1
-1:1452
- 48031 multiletter control sequences out of 65536+600000
+ 26143 strings out of 475512
+ 305225,1144653 words of node,token memory allocated
+ 74905 words of node memory still in use:
+   386 hlist, 39 vlist, 63 rule, 487 disc, 60 local_par, 44 math, 1762 glue, 446
+ kern, 203 penalty, 6166 glyph, 963 attribute, 61 glue_spec, 963 attribute_list,
+ 4 write, 204 pdf_literal, 5 pdf_start_link, 5 pdf_end_link, 5 pdf_dest, 5 pdf_a
+ction, 286 pdf_colorstack, 3 pdf_setmatrix, 3 pdf_save, 3 pdf_restore nodes
+   avail lists: 2:556,3:1300,4:1053,5:1386,6:195,7:24125,8:29,9:1696,10:38,11:14
+61
+ 48033 multiletter control sequences out of 65536+600000
  321 fonts using 21376815 bytes
  128i,20n,116p,933b,1192s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/gfsdidot/gfsudidotmath.enc}{/usr/
@@ -1290,10 +1290,10 @@ e/texlive/texmf-dist/fonts/type1/public/pxfonts/pxbsy.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/pxfonts/pxsy.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/pxfonts/pxsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/pxfonts/rpxmi.pfb>
-Output written on template.pdf (1 page, 3975411 bytes).
+Output written on template.pdf (1 page, 3975972 bytes).
 
-PDF statistics: 86 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 131072)
+PDF statistics: 88 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
+ 8 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -305,6 +305,6 @@ fig.subplots_adjust(right=0.88)
 cbar_ax = fig.add_axes([0.90, 0.15, 0.02, 0.7])
 cbar = fig.colorbar(im, cax=cbar_ax)
 cbar.set_label("Infected density")
-plt.savefig('Infection_density_figure.png', dpi = 600)
+plt.savefig('Infection_density_figure.png', dpi = 1000)
 
 print(density)
