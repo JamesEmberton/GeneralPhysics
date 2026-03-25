@@ -6,20 +6,23 @@ Talib Dbouk and Dimitris Drikakis.
   dynamics.
 \newblock {\em Physics of Fluids}, 33, 2 2021.
 
-\bibitem{Smith:2023qr}
-J.~M. Smith and A.~B. Jones.
-\newblock {\em {B}ook {T}itle}.
-\newblock Publisher, 7th edition, 2023.
+\bibitem{FRY2021104400}
+Richard Fry, Joe Hollinghurst, Helen~R Stagg, Daniel~A Thompson, Claudio
+  Fronterre, Chris Orton, Ronan~A Lyons, David~V Ford, Aziz Sheikh, and Peter~J
+  Diggle.
+\newblock Real-time spatial health surveillance: Mapping the uk covid-19
+  epidemic.
+\newblock {\em International Journal of Medical Informatics}, 149:104400, 2021.
 
-\bibitem{Smith:2024jd}
-A.~B. Jones and J.~M. Smith.
-\newblock {A}rticle {T}itle.
-\newblock {\em Journal Title}, 13(52):123--456, 3 2024.
+\bibitem{iog}
+Institute for Government~analysis.
+\newblock Timeline of uk coronavirus lockdowns, march 2020 to march 2021.
 
-\bibitem{LAROZE2021}
-Denise Laroze et~al.
-\newblock Covid-19 does not stop at open borders: Spatial contagion among local
-  authority districts during england's first wave.
-\newblock {\em Social Science \& Medicine}, 270, 2021.
+\bibitem{HAMIDI2020102378}
+Shima Hamidi, Reid Ewing, and Sadegh Sabouri.
+\newblock Longitudinal analyses of the relationship between development density
+  and the covid-19 morbidity and mortality rates: Early evidence from 1,165
+  metropolitan counties in the united states.
+\newblock {\em Health & Place}, 64:102378, 2020.
 
 \end{thebibliography}
