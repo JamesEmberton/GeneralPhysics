@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (format=lualatex 2025.9.21)  25 MAR 2026 15:07
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (format=lualatex 2025.9.21)  25 MAR 2026 15:20
  restricted system commands enabled.
 **template.tex
 (./template.tex
@@ -1213,19 +1213,19 @@ Package luatex.def Info: Figures/logo.png  used on input line 69.
 (luatex.def)             Requested size: 422.52338pt x 53.46254pt.
 File: Figures/logo.png Graphic file (type png)
 <use Figures/logo.png>
-Package luatex.def Info: Figures/logo.png  used on input line 209.
+Package luatex.def Info: Figures/logo.png  used on input line 220.
 (luatex.def)             Requested size: 422.52338pt x 53.46254pt.
-<Figures/Infection_density_figure2.png, id=16, 1011.78pt x 433.62pt>
-File: Figures/Infection_density_figure2.png Graphic file (type png)
-<use Figures/Infection_density_figure2.png>
-Package luatex.def Info: Figures/Infection_density_figure2.png  used on input l
-ine 209.
-(luatex.def)             Requested size: 744.20352pt x 318.94838pt.
-<Figures/Bostton_auto_sprawl_figure.png, id=17, 637.63219pt x 202.50656pt>
-File: Figures/Bostton_auto_sprawl_figure.png Graphic file (type png)
-<use Figures/Bostton_auto_sprawl_figure.png>
-Package luatex.def Info: Figures/Bostton_auto_sprawl_figure.png  used on input 
-line 209.
+<infection_spread_model_v3.png, id=18, 950.04938pt x 426.09187pt>
+File: infection_spread_model_v3.png Graphic file (type png)
+<use infection_spread_model_v3.png>
+Package luatex.def Info: infection_spread_model_v3.png  used on input line 220.
+
+(luatex.def)             Requested size: 744.20352pt x 333.78717pt.
+<Bostton_auto_sprawl_figure.png, id=19, 637.63219pt x 202.50656pt>
+File: Bostton_auto_sprawl_figure.png Graphic file (type png)
+<use Bostton_auto_sprawl_figure.png>
+Package luatex.def Info: Bostton_auto_sprawl_figure.png  used on input line 220
+.
 (luatex.def)             Requested size: 744.20352pt x 236.35387pt.
  (./template.bbl
 
@@ -1233,15 +1233,19 @@ LaTeX Font Warning: Font shape `TU/pxss/m/it' undefined
 (Font)              using `TU/pxss/m/n' instead on input line 7.
 
 )
+Overfull \vbox (34.55013pt too high) detected at line 220
+ []
+
+
 
 File: Figures/logo.png Graphic file (type png)
 <use Figures/logo.png>
-Package luatex.def Info: Figures/logo.png  used on input line 209.
+Package luatex.def Info: Figures/logo.png  used on input line 220.
 (luatex.def)             Requested size: 422.52338pt x 53.46254pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-<./Figures/logo.png><./Figures/Infection_density_figure2.png><./Figures/Bostton_
-auto_sprawl_figure.png>]
+<./Figures/logo.png><./infection_spread_model_v3.png><./Bostton_auto_sprawl_figu
+re.png>]
 \tf@nav=\write6
 
 \openout6 = template.nav
@@ -1251,13 +1255,11 @@ auto_sprawl_figure.png>]
 \tf@snm=\write8
 
 \openout8 = template.snm
-
-(./template.aux)
+ (./template.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1266,18 +1268,18 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 26143 strings out of 475512
- 305225,1144653 words of node,token memory allocated
- 74905 words of node memory still in use:
-   386 hlist, 39 vlist, 63 rule, 487 disc, 60 local_par, 44 math, 1762 glue, 446
- kern, 203 penalty, 6166 glyph, 963 attribute, 61 glue_spec, 963 attribute_list,
- 4 write, 204 pdf_literal, 5 pdf_start_link, 5 pdf_end_link, 5 pdf_dest, 5 pdf_a
-ction, 286 pdf_colorstack, 3 pdf_setmatrix, 3 pdf_save, 3 pdf_restore nodes
-   avail lists: 2:556,3:1300,4:1053,5:1386,6:195,7:24125,8:29,9:1696,10:38,11:14
-61
- 48033 multiletter control sequences out of 65536+600000
- 321 fonts using 21376815 bytes
- 128i,20n,116p,933b,1192s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 26238 strings out of 475512
+ 381553,1144653 words of node,token memory allocated
+ 79602 words of node memory still in use:
+   406 hlist, 41 vlist, 63 rule, 524 disc, 64 local_par, 56 math, 1861 glue, 472
+ kern, 218 penalty, 6561 glyph, 1019 attribute, 61 glue_spec, 1019 attribute_lis
+t, 8 write, 204 pdf_literal, 9 pdf_start_link, 9 pdf_end_link, 8 pdf_dest, 9 pdf
+_action, 290 pdf_colorstack, 3 pdf_setmatrix, 3 pdf_save, 3 pdf_restore nodes
+   avail lists: 2:556,3:1370,4:1065,5:1464,6:207,7:25689,8:29,9:1786,10:38,11:15
+73
+ 48067 multiletter control sequences out of 65536+600000
+ 405 fonts using 26942335 bytes
+ 128i,20n,116p,938b,1192s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/gfsdidot/gfsudidotmath.enc}{/usr/
 share/texlive/texmf-dist/fonts/enc/dvips/gfsdidot/didotOT1.enc}{/usr/share/texli
 ve/texmf-dist/fonts/enc/dvips/gfsdidot/didot.enc}{/usr/share/texlive/texmf-dist/
@@ -1290,10 +1292,10 @@ e/texlive/texmf-dist/fonts/type1/public/pxfonts/pxbsy.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/pxfonts/pxsy.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/pxfonts/pxsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/pxfonts/rpxmi.pfb>
-Output written on template.pdf (1 page, 3975972 bytes).
+Output written on template.pdf (1 page, 1240011 bytes).
 
-PDF statistics: 88 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 131072)
+PDF statistics: 96 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
+ 11 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -132,10 +132,14 @@
 \end{block}
 
 \begin{block}{Results: Simulation vs Data}
-	Using the parameters of transmissibility taking into account weather conditions $\beta_0 =0.48 $ \cite{TALIB2021} and using the spatial density given for each county of Greater Manchester from the March 2021 Census data \cite{CENSUS2021}. Comparing the two diagrams of the simulated spread over many days and the actual spread can see the pattern closely aligns in the earlier days of the initial days while the graphs diverge at the later times with the actual distribution of infected people being less uniform and scattered both in the centre and edges whereas the model shows a wave like distribution in which only infection left on the outer edges of Greater Manchester. 
-	Put things here - actual distributed to be added.
+	Infection of COVID-19 was modelled in Greater Manchester with an initial transmissibility of $\beta_0 = 0.48$~per day taking into account weather effects \cite{TALIB2021}
+	while using a diffusion coefficient of $D=0.85$~m$^{2}$~s$^{-1}$, and a mean recovery time of $\tau = 7$~days \cite{NHS2023}
+	and using the spatial density given for each county of Greater Manchester from the March 2021 Census data \cite{CENSUS2021}.
+	The model was compared to the COVID-19 infection map of Boston \cite{KUMAR2021} as it is a city of comparable size thus allowing us to 
+	clearly compare the accuracy of our model. As seen our model is comparable to the Boston infection map up to the first 30 days.
+	After that, the model diverges and while spreading out the infection at the initial points in the centre of Greater Manchester
+	disappears as opposed to the Boston heat map.
 \end{block}
-
 %----------------------------------------------------------------------------------------
 
 \end{column} % End of the first column
@@ -148,24 +152,31 @@
 %	RESULTS
 %----------------------------------------------------------------------------------------
 
+
+
 %------------------------------------------------
 
 \begin{block}{Results: Model Figure}
 	\begin{figure}
-		\includegraphics[width=\linewidth]{Infection_density_figure2.png}
-		\caption{Disease spreading over time in Greater Manchester.}
+		\includegraphics[width=\linewidth]{infection_spread_model_v3.png}
+		\caption{COVID-19 infection over time in Greater Manchester up to 100 days.
+		Using parameters of intial transmission rate $\beta_0 = 0.48 per day$ and diffusion coefficient of $D = 0.85 m^2 s^{-1}$ 
+		and a mean recovery time of $\tau = 7 days$.}
+		\label{model}
 	\end{figure}
 \end{block}
 
 \begin{block}{Results: Spread of Covid From Data}
 	\begin{figure}
 		\includegraphics[width=\linewidth]{Bostton_auto_sprawl_figure.png}
-		\caption{Disease spread in Boston over time.}
+		\caption{Covid-19 infection "Heatmap of infected (exposed and infectious) individuals every
+seven days: (a) Auto Sprawl;"\cite{KUMAR2021} of Boston over 84 days.}
+\label{Boston_data}
 	\end{figure}
 \end{block}
 
 \begin{block}{Discussion}
-We found that though our model was successful at modelling the initial spread of the Covid 19 pandemic. In particular, the exponential growth seen in FigXYZ matches near perfectly data seen in \cite{FRY2021104400}. However, after this, the model starts to diverge from real life data. This is likely because we made the assumption that people’s behaviour wouldn’t change when infected. In reality, as time went on, and more was understood about Covid, people started to self isolate when they first experienced symptoms, and the first lockdowns started to occur in March 2020 \cite{iog}. However, this doesn’t make the idea of using diffusion-reaction useless or invalid in all cases. Instead, it implies that the best use of such a model is to predict what would happen should the spread of the virus not be contained. 
+We found that though our model was successful at modelling the initial spread of the Covid 19 pandemic. In particular, the initial growth seen in Fig.\ref{model} matches near perfectly data seen in Fig. \ref{Boston_data}. However, after this, the model starts to diverge from real life data. This is likely because we made the assumption that people’s behaviour wouldn’t change when infected and the nature of the Reaction-Diffusion equation used in the model. In reality, as time went on, and more was understood about Covid, people started to self isolate when they first experienced symptoms, and the first lockdowns started to occur in March 2020 \cite{iog}. However, this doesn’t make the idea of using diffusion-reaction useless or invalid in all cases. Instead, it implies that the best use of such a model is to predict what would happen should the spread of the virus not be contained for the initial spread. 
 
 \bigskip
 
@@ -173,7 +184,7 @@ Our model also fails to account for individuals travelling long distances, inste
 
 \bigskip
 
-A diffusion-reaction model also fails to account for the virus, “Sticking around”. In our model, after around 60 days the area where our “patient zero” first appeared had been near completely cleared out as everyone in the area had caught the illness and recovered. In reality, not everyone in an area gets ill immediately, so the illness will stay around for longer rather than just spread to other areas. Despite that, the idea that a virus may exhaust all of its potential inhabitants in an area does have historical backing, though this is more common without lockdown protocol.
+A diffusion-reaction model also fails to account for the virus, “Sticking around”. In our model, after around 30 days the area where our “patient zero” first appeared had been near completely cleared out as everyone in the area had caught the illness and recovered. In reality, not everyone in an area gets ill immediately, so the illness will stay around for longer rather than just spread to other areas. Despite that, the idea that a virus may exhaust all of its potential inhabitants in an area does have historical backing, though this is more common without lockdown protocol.
 PARAGRAPH NEEDS SOURCING AND NEEDS DATA.
 
 \end{block}
