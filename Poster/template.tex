@@ -79,7 +79,7 @@
 \hspace{0.015\textwidth}%
 \begin{minipage}{0.97\textwidth}
 \begin{block}{Abstract}
-	In this study, we modelled the spread of disease in Manchester through a reaction-diffusion equation, comparing this to pre-lockdown Covid data. The main assumptions of the model were a constant population density, a recovery time of 14 days, and effects on immunocompromised people is ignored. The Euler method is used to solve the equation computationally. Our study successfully/unsuccessfully modelled spatial disease spread when comparing to pre-pandemic Covid data, but only the initial spread. The model could be improved by implementing random-walks to model more random behaviour, modelling more outbreak centres, or accounting for disease spread reduction.
+	In this study, we modelled the spread of disease in Manchester through a reaction-diffusion equation, comparing this to pre-lockdown Covid data. The main assumptions of the model were a constant population density, a recovery time of 14 days, and effects on immunocompromised people is ignored. The Euler method is used to solve the equation computationally. Our study successfully/unsuccessfully modelled spatial disease spread when comparing to pre-pandemic Covid data, but only the initial spread. Txhe model could be improved by implementing random-walks to model more random behaviour, modelling more outbreak centres, or accounting for disease spread reduction.
 \end{block}
 \end{minipage}
 
@@ -145,8 +145,8 @@
 	\begin{figure}
 		\includegraphics[width=\linewidth]{infection_spread_model_v3.png}
 		\caption{COVID-19 infection over time in Greater Manchester up to 100 days.
-			Using parameters of initial transmission rate $\beta_0 = 0.48 per day$ and diffusion coefficient of $D = 0.85 m^2 s^{-1}$ 
-			and a mean recovery time of $\tau = 7 days$.}
+			Using parameters of initial transmission rate $\beta_0 = 0.48$~per day and diffusion coefficient of $D = 0.85$~m$^2$~s$^{-1}$ 
+			and a mean recovery time of $\tau = 7$~days.}
 		\label{model}
 	\end{figure}
 \end{block}
@@ -164,7 +164,7 @@
 
 
 \begin{block}{Results: Simulation vs Data}
-	Infection of COVID-19 was modelled in Greater Manchester with an initial transmissibilty of $\beta_0 =0.48$ per day taking into account weather effects \cite{TALIB2021}
+	Infection of COVID-19 was modelled in Greater Manchester with an initial transmissibility of $\beta_0 =0.48$ per day taking into account weather effects \cite{TALIB2021}
 	while using a diffusion coefficient of $D=0.85 m^{2} s^{-1}$, and a mean recovery time of $\tau = 7$ days \cite{NHS2023}
 	and using the spatial density given for each county of Greater Manchester from the March 2021 Census data \cite{CENSUS2021}.
 	The model was compared to the COVID-19 infection map of Boston \cite{KUMAR2021} as it is a city of comparable size thus allowing us to 

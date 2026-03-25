@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (format=lualatex 2025.9.21)  25 MAR 2026 15:24
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (format=lualatex 2025.9.21)  25 MAR 2026 23:42
  restricted system commands enabled.
 **template.tex
 (./template.tex
@@ -1265,15 +1265,15 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 
 Here is how much of LuaTeX's memory you used:
  26238 strings out of 475512
- 381557,1144653 words of node,token memory allocated
- 87786 words of node memory still in use:
-   435 hlist, 43 vlist, 69 rule, 581 disc, 66 local_par, 62 math, 2049 glue, 517
- kern, 231 penalty, 7297 glyph, 1085 attribute, 61 glue_spec, 1085 attribute_lis
+ 381559,1144653 words of node,token memory allocated
+ 88630 words of node memory still in use:
+   439 hlist, 43 vlist, 69 rule, 584 disc, 67 local_par, 66 math, 2071 glue, 524
+ kern, 234 penalty, 7362 glyph, 1105 attribute, 61 glue_spec, 1105 attribute_lis
 t, 8 write, 214 pdf_literal, 13 pdf_start_link, 13 pdf_end_link, 8 pdf_dest, 13 
-pdf_action, 308 pdf_colorstack, 3 pdf_setmatrix, 3 pdf_save, 3 pdf_restore nodes
+pdf_action, 310 pdf_colorstack, 3 pdf_setmatrix, 3 pdf_save, 3 pdf_restore nodes
 
-   avail lists: 2:556,3:1451,4:1119,5:1599,6:213,7:28479,8:29,9:1909,10:38,11:17
-44
+   avail lists: 1:1,2:556,3:1460,4:1125,5:1620,6:216,7:28752,8:29,9:1921,10:39,1
+1:1753
  48067 multiletter control sequences out of 65536+600000
  405 fonts using 26942335 bytes
  128i,20n,116p,938b,1192s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1289,7 +1289,7 @@ e/texlive/texmf-dist/fonts/type1/public/pxfonts/pxbsy.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/pxfonts/pxsy.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/pxfonts/pxsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/pxfonts/rpxmi.pfb>
-Output written on template.pdf (1 page, 1240620 bytes).
+Output written on template.pdf (1 page, 1239390 bytes).
 
 PDF statistics: 100 PDF objects out of 1000 (max. 8388607)
  70 compressed objects within 1 object stream
