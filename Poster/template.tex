@@ -105,30 +105,51 @@
 %	MATERIALS
 %----------------------------------------------------------------------------------------
 
-\begin{block}{Theory - Reaction-Diffusion Equation} 
-	We attempt to model the spread of disease via a reaction-diffusion equation,
+\begin{block}{Theory - Equations and Assumptions} 
+	Diffusion-reaction equations were originally developed to model chemical
+	reactions involving microscopic particles in a fluid undergoing random,
+	Brownian motion. The diffusion-reaction equation is given by,
 	\begin{equation}
-		\pdv{I}{t} = D\grad^2I + \beta(x,y)SI 	- \gamma I,
+		\pdv{u}{t} = D\grad^2u + R,
 	\end{equation}
-	which models spatial densities $\rho$, which are parametrised such that,
+	where $u = u(x,y,t)$ is some unknown function, $D$ is a matrix of diffusion coefficients, modelling the net movement of particles from an area of high concentration to an area of low concentration, and $R = R(u, x, y, t)$ is the reaction term, which models how particles change from one type to another. This equation is ideal for modelling disease spread since, on a large scale, the motion of people can be assumed to be random.
+	
+	\bigskip
+	
+	In this model, we define,
 	\begin{equation}
-		\rho = S + I + R,
+		u(x,y,t) = S(x,y,t) + I(x,y,t) + R(x,y,t),
 	\end{equation}
-	where,
+	as the total population, which must be conserved. We have defined the following additional fields:
 	\begin{itemize}
-		\item $S(x,y,t)$: Susceptible population.
-		\begin{itemize}
-			\item Those who can catch disease.
-		\end{itemize}
-		\item $I(x,y,t)$: Infected population.
-		\begin{itemize}
-			\item Those who have the disease.
-		\end{itemize}
-		\item $R(x,y,t)$: Recovered population.
-		\begin{itemize}
-			\item Those who are no longer infected.
-		\end{itemize}
+		\item $S(x,y,t)$ is the susceptible population (those who can catch the disease).
+		\item $I(x,y,t)$ is the infected population (those who have the disease and can spread it).
+		\item $R(x,y,t)$ is the recovered population.
 	\end{itemize}
+	We then define a reaction term consisting of two parts, the rate of new infection,
+	\begin{equation}
+		\pdv{S}{t} = -\beta_0\rho(x,y)SI,
+	\end{equation}
+	and the rate of recovery,
+	\begin{equation}
+		\pdv{R}{t}= \gamma I,
+	\end{equation}
+	where $\beta$ is the rate of infection, $\rho(x,y)$ is the population density field, and
+	\begin{equation}
+			\gamma = \frac{1}{\tau},
+	\end{equation}
+	where $\tau$ is the recovery time. This allows us to obtain the final differential equation,
+	\begin{equation}
+		\pdv{I}{t} = D\grad^2 u(x,y,t) + \beta_0\rho(x,y)SI - \gamma I.
+	\end{equation}
+	We chose to model COVID-19, since a large amount of data on its spread is available to compare the model to, as well as its high rate of infection.
+\end{block}
+\begin{block}{Theory - Numerical Methods}
+	The system of equations was discretised using the method of lines and a five-point stencil, meaning each spatial cell has four nearest-neighbours that contribute to its spatial gradient, as below,
+	\begin{equation}
+		\grad^2I \approx I_{i+1,j} + I_{i-1,j} + I_{i,j+1} + I_{i,j-1} - 4I_{i,j}.
+	\end{equation}
+	Each borough within Greater Manchester was modelled using a Gaussian distribution centred on the area, using census data to obtain population densities.
 \end{block}
 
 \begin{block}{Results: Simulation vs Data}
