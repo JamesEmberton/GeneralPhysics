@@ -94,11 +94,11 @@
 %----------------------------------------------------------------------------------------
             
 \begin{block}{Introduction}
-	Modelling disease spread is important for governments have appropriate plans in case of large-scale pandemics. The recent Covid pandemic was not handled very well (give some examples, probably cite some things here). With this motivation, we attempted to model the disease spread within greater Manchester. Using our knowledge of physics, we supposed that the spread of a disease like Covid could be modelled by a diffusion equation.
-	
+	Modelling disease spread is crucial for governments to develop effective contingency plans for large-scale pandemics. The UK's "inadequate response" to COVID-19 serves as evidence for poor governmental action (reference in whatsapp here). Motivated by the need for better predictive tools, we attempted to model disease spread within Greater Manchester using a reaction-diffusion equation, chosen because the random large-scale motion of people is analogous to Brownian diffusion.
+
 	\bigskip
 	
-	However, due to mass conservation, a standard diffusion equation is incapable of accurately modelling disease spread, because diseases are inherently create new infections. Therefore, for disease modelling, a reaction-diffusion equation is much so that the number of infections at any time is not conserved. This allows us to model new infections and patient recovery.
+	However, due to mass conservation, a standard diffusion equation is incapable of accurately modelling disease spread, because diseases constantly generate new infections. A reaction term is therefore added to account for both new infections and patient recovery, yielding the SIR-based framework described below.
 \end{block}
 
 %----------------------------------------------------------------------------------------
