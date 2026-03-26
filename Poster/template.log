@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (format=lualatex 2025.9.21)  26 MAR 2026 14:21
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (format=lualatex 2025.9.21)  26 MAR 2026 15:01
  restricted system commands enabled.
 **template.tex
 (./template.tex
@@ -1265,14 +1265,14 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 
 Here is how much of LuaTeX's memory you used:
  26238 strings out of 475512
- 381554,1144653 words of node,token memory allocated
- 80423 words of node memory still in use:
-   410 hlist, 41 vlist, 63 rule, 526 disc, 65 local_par, 60 math, 1883 glue, 478
- kern, 221 penalty, 6625 glyph, 1039 attribute, 61 glue_spec, 1039 attribute_lis
+ 381544,1144653 words of node,token memory allocated
+ 79901 words of node memory still in use:
+   409 hlist, 41 vlist, 63 rule, 523 disc, 65 local_par, 60 math, 1868 glue, 473
+ kern, 221 penalty, 6575 glyph, 1039 attribute, 61 glue_spec, 1039 attribute_lis
 t, 8 write, 204 pdf_literal, 9 pdf_start_link, 9 pdf_end_link, 8 pdf_dest, 9 pdf
 _action, 292 pdf_colorstack, 3 pdf_setmatrix, 3 pdf_save, 3 pdf_restore nodes
-   avail lists: 2:556,3:1379,4:1071,5:1482,6:210,7:25959,8:29,9:1798,10:38,11:15
-79
+   avail lists: 2:556,3:1379,4:1071,5:1467,6:210,7:25764,8:29,9:1795,10:38,11:15
+70
  48067 multiletter control sequences out of 65536+600000
  405 fonts using 26942335 bytes
  128i,20n,116p,938b,1192s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1288,7 +1288,7 @@ e/texlive/texmf-dist/fonts/type1/public/pxfonts/pxbsy.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/pxfonts/pxsy.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/pxfonts/pxsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/pxfonts/rpxmi.pfb>
-Output written on template.pdf (1 page, 1238241 bytes).
+Output written on template.pdf (1 page, 1238074 bytes).
 
 PDF statistics: 96 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream
