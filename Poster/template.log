@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (format=lualatex 2025.9.21)  27 MAR 2026 12:35
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (format=lualatex 2025.9.21)  27 MAR 2026 12:37
  restricted system commands enabled.
 **template.tex
 (./template.tex
@@ -1233,10 +1233,6 @@ LaTeX Font Warning: Font shape `TU/pxss/m/it' undefined
 (Font)              using `TU/pxss/m/n' instead on input line 7.
 
 )
-Overfull \vbox (18.50186pt too high) detected at line 241
- []
-
-
 
 File: Figures/logo.png Graphic file (type png)
 <use Figures/logo.png>
@@ -1269,15 +1265,15 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 
 Here is how much of LuaTeX's memory you used:
  26219 strings out of 475512
- 476937,1144653 words of node,token memory allocated
- 108283 words of node memory still in use:
-   514 hlist, 47 vlist, 73 rule, 776 disc, 78 local_par, 69 math, 2417 glue, 668
- kern, 263 penalty, 9239 glyph, 1184 attribute, 61 glue_spec, 1184 attribute_lis
+ 476922,1144653 words of node,token memory allocated
+ 107289 words of node memory still in use:
+   513 hlist, 47 vlist, 73 rule, 766 disc, 78 local_par, 69 math, 2398 glue, 661
+ kern, 263 penalty, 9138 glyph, 1184 attribute, 61 glue_spec, 1184 attribute_lis
 t, 10 write, 214 pdf_literal, 12 pdf_start_link, 12 pdf_end_link, 11 pdf_dest, 1
 2 pdf_action, 312 pdf_colorstack, 3 pdf_setmatrix, 3 pdf_save, 3 pdf_restore nod
 es
-   avail lists: 1:1,2:556,3:1550,4:1131,5:2052,6:249,7:35430,8:43,9:2176,10:37,1
-1:2329
+   avail lists: 1:2,2:556,3:1550,4:1131,5:2031,6:249,7:35070,8:43,9:2173,10:37,1
+1:2299
  48045 multiletter control sequences out of 65536+600000
  405 fonts using 26942335 bytes
  128i,20n,116p,938b,1127s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1292,7 +1288,7 @@ ic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/gfsdidot/GFSDidot.pfb><
 e/texlive/texmf-dist/fonts/type1/public/pxfonts/pxbsy.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/pxfonts/pxsy.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/pxfonts/pxsya.pfb>
-Output written on template.pdf (1 page, 1242103 bytes).
+Output written on template.pdf (1 page, 1242042 bytes).
 
 PDF statistics: 98 PDF objects out of 1000 (max. 8388607)
  69 compressed objects within 1 object stream
