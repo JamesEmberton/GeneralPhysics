@@ -106,9 +106,9 @@ This study modelled the spread of disease in Manchester, using a reaction-diffus
 %----------------------------------------------------------------------------------------
 
 \begin{block}{Theory - Equations and Assumptions} 
-	Diffusion-reaction equations were originally developed to model chemical
+	Reaction-diffusion equations were originally developed to model chemical
 	reactions involving microscopic particles in a fluid undergoing random,
-	Brownian motion. The diffusion-reaction equation is given by,
+	Brownian motion. The reaction-diffusion equation is given by,
 	\begin{equation}
 		\pdv{u}{t} = D\grad^2u + R,
 	\end{equation}
@@ -197,7 +197,7 @@ This study modelled the spread of disease in Manchester, using a reaction-diffus
 \end{block}
 
 \begin{block}{Discussion}
-We found that our model was successful at modelling the initial spread of the COVID-19 pandemic. In particular, the initial growth seen in Fig.\ref{model} matches near perfectly data seen in Fig. \ref{Boston_data}. However, after this, the model starts to diverge from real life data. This is likely because we made the assumption that people’s behaviour wouldn’t change when infected and the nature of the Reaction-Diffusion equation used in the model. In reality, as time went on, and more was understood about Covid, people started to self isolate when they first experienced symptoms, and the first lockdowns started to occur in March 2020 \cite{iog}. However, this doesn’t make the idea of using diffusion-reaction useless or invalid in all cases. Instead, it implies that the best use of such a model is to predict what would happen should the spread of the virus not be contained for the initial spread. 
+We found that our model was successful at modelling the initial spread of the COVID-19 pandemic. In particular, the initial growth seen in Fig.\ref{model} matches near perfectly data seen in Fig. \ref{Boston_data}. However, after this, the model starts to diverge from real life data. This is likely due to our assumption that people wouldn't isolate. In reality, as time went on, and more was understood about Covid, people started to self isolate when they first experienced symptoms, and the first lockdowns started to occur in March 2020 \cite{iog}. However, this doesn’t make the idea of using reaction-diffusion useless or invalid in all cases. Instead, it implies that the best use of such a model is to predict what would happen should the spread of the virus not be contained for the initial spread. 
 
 \bigskip
 
@@ -205,7 +205,7 @@ Our model also fails to account for individuals travelling long distances, inste
 
 \bigskip
 
-A diffusion-reaction model also fails to account for the virus, “Sticking around”, as seen in figure \ref{Boston_data}. In our model, after around 30 days the area where our “patient zero” first appeared had been near completely cleared out as everyone in the area had caught the illness and recovered. This contrasts with the data seen above. In reality, not everyone in an area gets ill immediately, so the illness will stay around for longer rather than just spread to other areas. As such, even months on the infected density for the virus doesn't fall off close to 0 unlike our model. Despite this, the model may still be valid. Historically pandemics tend to slow down as they burn through all people in an area as herd immunity protects the population. As real life lockdowns (which aren't taken into account by our model) slowed down the spread of infection, it took far longer for herd immunity to be achieved in real life.
+A reaction-diffusion model also fails to account for the virus, “Sticking around”, as seen in figure \ref{Boston_data}. In our model, after around 30 days the area where our “patient zero” first appeared had been near completely cleared out as everyone in the area had caught the illness and recovered. This contrasts with the data seen above. In reality, not everyone in an area gets ill immediately, so the illness will stay around for longer rather than just spread to other areas. As such, even months on the infected density for the virus doesn't fall off close to 0 unlike our model. Despite this, the model may still be valid. Historically pandemics tend to slow down as they burn through all people in an area as herd immunity protects the population. As real life lockdowns (which aren't taken into account by our model) slowed down the spread of infection, it took far longer for herd immunity to be achieved in real life.
 
 \end{block}
 
