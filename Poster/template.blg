@@ -1,44 +1,46 @@
 This is BibTeX, Version 0.99d (TeX Live 2025/dev/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file:[297] Utils.pm:399> ERROR - Cannot find 'template.bcf'!
-[298] Biber.pm:136> INFO - ERRORS: 1
-           1791 wiz_defined-function locations,
-            500 strings with 5029 characters,
-and the built_in function-call counts, 1338 in all, are:
-= -- 108
-> -- 57
+The top-level auxiliary file: template.aux
+The style file: unsrt.bst
+Database file #1: sample.bib
+You've used 9 entries,
+            1791 wiz_defined-function locations,
+            508 strings with 5179 characters,
+and the built_in function-call counts, 1542 in all, are:
+= -- 129
+> -- 61
 < -- 1
-+ -- 23
-- -- 15
-* -- 69
-:= -- 223
-add.period$ -- 22
-call.type$ -- 8
-change.case$ -- 7
++ -- 25
+- -- 16
+* -- 84
+:= -- 255
+add.period$ -- 25
+call.type$ -- 9
+change.case$ -- 8
 chr.to.int$ -- 0
-cite$ -- 8
-duplicate$ -- 59
-empty$ -- 148
-format.name$ -- 15
-if$ -- 295
+cite$ -- 9
+duplicate$ -- 68
+empty$ -- 170
+format.name$ -- 16
+if$ -- 339
 int.to.chr$ -- 0
-int.to.str$ -- 8
-missing$ -- 6
-newline$ -- 41
-num.names$ -- 8
-pop$ -- 28
+int.to.str$ -- 9
+missing$ -- 7
+newline$ -- 46
+num.names$ -- 9
+pop$ -- 29
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 32
+skip$ -- 35
 stack$ -- 0
-substring$ -- 43
-swap$ -- 9
+substring$ -- 62
+swap$ -- 10
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 11
-width$ -- 9
-write$ -- 83
+while$ -- 14
+width$ -- 10
+write$ -- 94

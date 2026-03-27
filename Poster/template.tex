@@ -112,7 +112,7 @@ This study modelled the spread of disease in Manchester, using a reaction-diffus
 	\begin{equation}
 		\pdv{u}{t} = D\grad^2u + R,
 	\end{equation}
-	where $u = u(x,y,t)$ is some unknown function, $D$ is a matrix of diffusion coefficients, modelling the net movement of particles from an area of high concentration to an area of low concentration, and $R = R(u, x, y, t)$ is the reaction term, which models how particles change from one type to another. This equation is ideal for modelling disease spread since, on a large scale, the motion of people can be assumed to be random.
+	where $u = u(x,y,t)$ is some unknown function, $D$ is a matrix of diffusion coefficients, modelling the net movement of particles from an area of high concentration to an area of low concentration, and $R = R(u, x, y, t)$ is the reaction term, which models how particles change from one type to another \cite{turing1952chemical}. This equation is ideal for modelling disease spread since, on a large scale, the motion of people can be assumed to be random.
 	
 	\bigskip
 	
@@ -153,7 +153,7 @@ This study modelled the spread of disease in Manchester, using a reaction-diffus
 	
 	\bigskip
 	
-	The Euler method was used to solve equation \eqref{eq:6}. The Euler method is a first-order numerical procedure to for solving ordinary differential equations \cite{euler1768institutiones}. 
+	The Euler method was used to solve equation \eqref{eq:6}, calculating the total $S$, $I$, and $R$ fields. The Euler method is a first-order numerical procedure to for solving ordinary differential equations \cite{euler1768institutiones}. 
 \end{block}
 
 \begin{block}{Results: Model Figure}
@@ -185,28 +185,27 @@ This study modelled the spread of disease in Manchester, using a reaction-diffus
 	and using the spatial density given for each county of Greater Manchester from the March 2021 Census data \cite{CENSUS2021}.
 	The model was compared to the COVID-19 infection map of Boston \cite{KUMAR2021} as it is a city of comparable size thus allowing us to 
 	clearly compare the accuracy of our model. As seen our model is comparable to the Boston infection map up to the first 30 days.
-	After that, the model diverges and while spreading out the infection at the initial points in the centre of Greater Manchester
-	disappears as opposed to the Boston heat map.
+	At later times, the model diverges from real data. While our model predicts rapid decrease in the infected population, whereas in real outbreaks, as in figure \ref{Boston_data}, the infection remains for significantly longer when compared to our simulation.
 \end{block}
 
 \begin{block}{Results: Spread of Covid From Data}
 	\begin{figure}
 		\includegraphics[width=\linewidth]{Bostton_auto_sprawl_figure.png}
-		\caption{Covid-19 infection "Heatmap of infected (exposed and infectious) individuals every seven days: (a) Auto Sprawl;"\cite{KUMAR2021} of Boston over 84 days. Figure 5 from " Activity-based epidemic propagation and contact network scaling in auto-dependent metropolitan areas" by Kumar, Nishant \& Oke, Jimi \& Nahmias Biran, Bat-hen,2021, Scientific Reports, Volume 11, p. 9. Copyright 2021 by Authors. CC BY " }
+		\caption{COVID-19 infection "Heatmap of infected (exposed and infectious) individuals every seven days: (a) Auto Sprawl;"\cite{KUMAR2021} of Boston over 84 days. Figure 5 from " Activity-based epidemic propagation and contact network scaling in auto-dependent metropolitan areas" by Kumar, Nishant \& Oke, Jimi \& Nahmias Biran, Bat-hen,2021, Scientific Reports, Volume 11, p. 9. Copyright 2021 by Authors. CC BY " }
 \label{Boston_data}
 	\end{figure}
 \end{block}
 
 \begin{block}{Discussion}
-We found that though our model was successful at modelling the initial spread of the Covid 19 pandemic. In particular, the initial growth seen in Fig.\ref{model} matches near perfectly data seen in Fig. \ref{Boston_data}. However, after this, the model starts to diverge from real life data. This is likely because we made the assumption that people’s behaviour wouldn’t change when infected and the nature of the Reaction-Diffusion equation used in the model. In reality, as time went on, and more was understood about Covid, people started to self isolate when they first experienced symptoms, and the first lockdowns started to occur in March 2020 \cite{iog}. However, this doesn’t make the idea of using diffusion-reaction useless or invalid in all cases. Instead, it implies that the best use of such a model is to predict what would happen should the spread of the virus not be contained for the initial spread. 
+We found that our model was successful at modelling the initial spread of the COVID-19 pandemic. In particular, the initial growth seen in Fig.\ref{model} matches near perfectly data seen in Fig. \ref{Boston_data}. However, after this, the model starts to diverge from real life data. This is likely because we made the assumption that people’s behaviour wouldn’t change when infected and the nature of the Reaction-Diffusion equation used in the model. In reality, as time went on, and more was understood about Covid, people started to self isolate when they first experienced symptoms, and the first lockdowns started to occur in March 2020 \cite{iog}. However, this doesn’t make the idea of using diffusion-reaction useless or invalid in all cases. Instead, it implies that the best use of such a model is to predict what would happen should the spread of the virus not be contained for the initial spread. 
 
 \bigskip
 
-Our model also fails to account for individuals travelling long distances, instead assuming that everyone remains in roughly the same location. In reality, this isn’t true for multiple reasons. Firstly, as a big city, people commute into central Manchester from the likes of Salford, Stockport, and Tameside both to shop and work. These people are likely to get infected in Manchester and travel back to their homes, causing the pandemic to spread to outer regions sooner than in the model. Greater Manchester isn’t closed either with both national and international travel happening in and out daily. Whilst an infected person leaving Manchester wouldn’t change much, at least outside of the very early days, an infected person entering Manchester could lead to a new infection centre. In reality, it turns out that, “connectivity matters more than density in the spread of COVID-19” \cite{HAMIDI2020102378}.
+Our model also fails to account for individuals travelling long distances, instead assuming that everyone remains in approximately the same location. In reality, this isn’t true for multiple reasons. First, as a big city, people commute into central Manchester from surrounding boroughs and towns to shop and work. These people are likely to get infected in Manchester and travel back to their homes, causing the pandemic to spread to outer regions sooner than in the model. Greater Manchester isn’t closed either with people travelling national and internationally every. Whilst an infected person leaving Manchester wouldn’t change much, at least outside of the very early days, an infected person entering Manchester could lead to a new infection centre. In reality, it turns out that, “connectivity matters more than density in the spread of COVID-19” \cite{HAMIDI2020102378}.
 
 \bigskip
 
-A diffusion-reaction model also fails to account for the virus, “Sticking around”, as seen in Fig. 2. In our model, after around 30 days the area where our “patient zero” first appeared had been near completely cleared out as everyone in the area had caught the illness and recovered. This contrasts with the data seen above. In reality, not everyone in an area gets ill immediately, so the illness will stay around for longer rather than just spread to other areas. As such, even months on the infected density for the virus doesn't fall off close to 0 unlike our model. Despite this, the model may still be valid. Historically pandemics tend to slow down as they burn through all people in an area as herd immunity protects the population. As real life lockdowns (which aren't taken into account by our model) slowed down the spread of infection, it took far longer for herd immunity to be achieved in real life.
+A diffusion-reaction model also fails to account for the virus, “Sticking around”, as seen in figure \ref{Boston_data}. In our model, after around 30 days the area where our “patient zero” first appeared had been near completely cleared out as everyone in the area had caught the illness and recovered. This contrasts with the data seen above. In reality, not everyone in an area gets ill immediately, so the illness will stay around for longer rather than just spread to other areas. As such, even months on the infected density for the virus doesn't fall off close to 0 unlike our model. Despite this, the model may still be valid. Historically pandemics tend to slow down as they burn through all people in an area as herd immunity protects the population. As real life lockdowns (which aren't taken into account by our model) slowed down the spread of infection, it took far longer for herd immunity to be achieved in real life.
 
 \end{block}
 
