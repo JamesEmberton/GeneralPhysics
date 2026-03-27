@@ -48,7 +48,7 @@
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
 
-\title{\Huge Can disease spread be modelled by a reaction-diffusion equation?} % Poster title
+\title{\huge Can the spread of COVID-19 be modelled by a reaction-diffusion equation?} % Poster title
 
 \author{Oliver Clift\textsuperscript{1}, James Emberton\textsuperscript{1}, Isaac Millen\textsuperscript{1}, Nicholas Mitchiner\textsuperscript{1}, Edward Phillips\textsuperscript{1} and Dominik Szablonski\textsuperscript{1}} % Author(s)
 
@@ -79,7 +79,7 @@
 \hspace{0.015\textwidth}%
 \begin{minipage}{0.97\textwidth}
 \begin{block}{Abstract}
-In this study, we modelled the spread of disease in Manchester through a reaction-diffusion equation, comparing this to COVID-19 data in Boston. The main assumptions of the model were a constant population density, a recovery time of 14 days, and negligible effects on immunocompromised individuals. The Euler method was used to solve the equation computationally. Our model successfully recreated spatial disease spread when compared to COVID-19 data in Boston, although it diverged from the data after $\sim$30 days. The model could be improved by accounting for more advanced assumptions including a travelling population, multiple outbreak centres and behavioural changes.
+This study modelled the spread of disease in Manchester, using a reaction-diffusion equation, comparing this to COVID-19 data in Boston. The main assumptions of the model were a constant population density, a recovery time of 14 days, and negligible effects on immunocompromised individuals. The Euler method was used to solve the equation numerically. Our model successfully recreated spatial disease spread when compared to COVID-19 data in Boston, although it diverged from the data after $\sim$30 days. Model extensions could involve including a travelling population, multiple outbreak centres and behavioural changes.
 \end{block}
 \end{minipage}
 
@@ -140,7 +140,7 @@ In this study, we modelled the spread of disease in Manchester through a reactio
 	\end{equation}
 	where $\tau$ is the recovery time. This allows us to obtain the final differential equation,
 	\begin{equation}
-		\pdv{I}{t} = D\grad^2 u(x,y,t) + \beta_0\rho(x,y)SI - \gamma I.
+		\pdv{I}{t} = D\grad^2 u(x,y,t) + \beta_0\rho(x,y)SI - \gamma I. \label{eq:6}
 	\end{equation}
 	We chose to model COVID-19, since a large amount of data on its spread is available to compare the model to, as well as its high rate of infection.
 \end{block}
@@ -149,14 +149,18 @@ In this study, we modelled the spread of disease in Manchester through a reactio
 	\begin{equation}
 		\grad^2I \approx I_{i+1,j} + I_{i-1,j} + I_{i,j+1} + I_{i,j-1} - 4I_{i,j}.
 	\end{equation}
-	Each borough within Greater Manchester was modelled using a Gaussian distribution centred on the area, using census data to obtain population densities.
+	The population density of each borough within Greater Manchester was modelled using a series of Gaussian functions centred on their approximate positions relative to each other using 2021 Census data. The population density is denoted in dimensions of people per area. Due to the discretisation of our model, we normalised the population densities.
+	
+	\bigskip
+	
+	The Euler method was used to solve equation \eqref{eq:6}. The Euler method is a first-order numerical procedure to for solving ordinary differential equations \cite{euler1768institutiones}. 
 \end{block}
 
 \begin{block}{Results: Model Figure}
 	\begin{figure}
 		\includegraphics[width=\linewidth]{infection_spread_model_v3.png}
 		\caption{COVID-19 infection over time in Greater Manchester up to 100 days.
-			Using parameters of initial transmission rate $\beta_0 = 0.48$~per day and diffusion coefficient of $D = 0.85$~m$^2$~s$^{-1}$ 
+			Using parameters of initial transmission rate $\beta_0 = 0.48$~per day and diffusion coefficient of $D = 0.5$~m$^2$~s$^{-1}$ 
 			and a mean recovery time of $\tau = 7$~days.}
 		\label{model}
 	\end{figure}
@@ -211,7 +215,7 @@ A diffusion-reaction model also fails to account for the virus, “Sticking arou
 %----------------------------------------------------------------------------------------
 
 \begin{block}{Conclusions} 
-	In conclusion, the reaction-diffusion equation successfully captured the initial spread of COVID-19, but diverged from real-world data at later times. This is due to simplifying assumptions, such as a lack of behavioural changes, a travelling population, and the virus not lingering in certain areas, which a better model for disease spread would account for.
+	In conclusion, the reaction-diffusion equation successfully captured the initial spread of COVID-19, but diverged from real-world data at later times. This is due to simplifying assumptions, such as a lack of behavioural changes, a travelling population, and the virus not lingering in certain areas, which a more sophisticated model, taking into accout travelling population, multiple outbreak centres and behavioural changes would account for.
 \end{block}
 %----------------------------------------------------------------------------------------
 %	REFERENCES
