@@ -152,16 +152,6 @@ In this study, we modelled the spread of disease in Manchester through a reactio
 	Each borough within Greater Manchester was modelled using a Gaussian distribution centred on the area, using census data to obtain population densities.
 \end{block}
 
-\begin{block}{Results: Simulation vs Data}
-	Infection of COVID-19 was modelled in Greater Manchester with an initial transmissibility of $\beta_0 = 0.48$~per day taking into account weather effects \cite{TALIB2021}
-	while using a diffusion coefficient of $D=0.85$~m$^{2}$~s$^{-1}$, and a mean recovery time of $\tau = 7$~days \cite{NHS2023}
-	and using the spatial density given for each county of Greater Manchester from the March 2021 Census data \cite{CENSUS2021}.
-	The model was compared to the COVID-19 infection map of Boston \cite{KUMAR2021} as it is a city of comparable size thus allowing us to 
-	clearly compare the accuracy of our model. As seen our model is comparable to the Boston infection map up to the first 30 days.
-	After that, the model diverges and while spreading out the infection at the initial points in the centre of Greater Manchester
-	disappears as opposed to the Boston heat map.
-\end{block}
-
 \begin{block}{Results: Model Figure}
 	\begin{figure}
 		\includegraphics[width=\linewidth]{infection_spread_model_v3.png}
@@ -184,6 +174,16 @@ In this study, we modelled the spread of disease in Manchester through a reactio
 %----------------------------------------------------------------------------------------
 
 %------------------------------------------------
+
+\begin{block}{Results: Simulation vs Data}
+	Infection of COVID-19 was modelled in Greater Manchester with an initial transmissibility of $\beta_0 = 0.48$~per day taking into account weather effects \cite{TALIB2021}
+	while using a diffusion coefficient of $D=0.85$~m$^{2}$~s$^{-1}$, and a mean recovery time of $\tau = 7$~days \cite{NHS2023}
+	and using the spatial density given for each county of Greater Manchester from the March 2021 Census data \cite{CENSUS2021}.
+	The model was compared to the COVID-19 infection map of Boston \cite{KUMAR2021} as it is a city of comparable size thus allowing us to 
+	clearly compare the accuracy of our model. As seen our model is comparable to the Boston infection map up to the first 30 days.
+	After that, the model diverges and while spreading out the infection at the initial points in the centre of Greater Manchester
+	disappears as opposed to the Boston heat map.
+\end{block}
 
 \begin{block}{Results: Spread of Covid From Data}
 	\begin{figure}
