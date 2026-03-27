@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (format=lualatex 2025.9.21)  27 MAR 2026 13:09
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (format=lualatex 2025.9.21)  27 MAR 2026 13:14
  restricted system commands enabled.
 **template.tex
 (./template.tex
@@ -809,7 +809,7 @@ Package beamerposter Info: checking size input, please wait. on input line 130.
 Package beamerposter Info: the input a1\ 2\ was correct, we proceed. on input l
 ine 130.
 Package beamerposter Info: finished size input check. on input line 130.
-Package beamerposter Info: myfontscale=0.95 on input line 130.
+Package beamerposter Info: myfontscale=0.965 on input line 130.
  ( FP-UPN ( FP-MUL )
 ( FP-ROUND ) )
 \tmp=\dimen294
@@ -817,7 +817,7 @@ Package beamerposter Info: paperwidth=1690.09352pt, paperheight=2392.87694pt on
  input line 173.
 Package beamerposter Info: textwidth=1661.64076pt, textheight=2364.42418pt on i
 nput line 174.
-Package beamerposter Info: fontscale=0.70710678, myfontscale=0.67 on input line
+Package beamerposter Info: fontscale=0.70710678, myfontscale=0.68 on input line
  175.
  ( FP-UPN ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL )
 ( FP-ROUND ) ) ( FP-UPN ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL )
@@ -1290,13 +1290,13 @@ File: infection_spread_model_v3.png Graphic file (type png)
 <use infection_spread_model_v3.png>
 Package luatex.def Info: infection_spread_model_v3.png  used on input line 243.
 
-(luatex.def)             Requested size: 745.05692pt x 334.16426pt.
+(luatex.def)             Requested size: 744.8414pt x 334.07324pt.
 <Bostton_auto_sprawl_figure.png, id=24, 637.63219pt x 202.50656pt>
 File: Bostton_auto_sprawl_figure.png Graphic file (type png)
 <use Bostton_auto_sprawl_figure.png>
 Package luatex.def Info: Bostton_auto_sprawl_figure.png  used on input line 243
 .
-(luatex.def)             Requested size: 745.05692pt x 236.62578pt.
+(luatex.def)             Requested size: 744.8414pt x 236.55472pt.
  (./template.bbl
 
 LaTeX Font Warning: Font shape `TU/pxss/m/it' undefined
@@ -1342,15 +1342,15 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 
 Here is how much of LuaTeX's memory you used:
  26376 strings out of 475512
- 476937,1144653 words of node,token memory allocated
- 109500 words of node memory still in use:
-   527 hlist, 47 vlist, 74 rule, 798 disc, 82 local_par, 77 math, 2435 glue, 659
- kern, 271 penalty, 9290 glyph, 1229 attribute, 64 glue_spec, 1229 attribute_lis
+ 476933,1144653 words of node,token memory allocated
+ 109625 words of node memory still in use:
+   529 hlist, 47 vlist, 74 rule, 800 disc, 82 local_par, 77 math, 2438 glue, 659
+ kern, 276 penalty, 9297 glyph, 1229 attribute, 64 glue_spec, 1229 attribute_lis
 t, 10 write, 214 pdf_literal, 15 pdf_start_link, 15 pdf_end_link, 12 pdf_dest, 1
 5 pdf_action, 322 pdf_colorstack, 4 pdf_setmatrix, 4 pdf_save, 4 pdf_restore nod
 es
-   avail lists: 2:556,3:1592,4:1161,5:2028,6:261,7:35711,8:43,9:2230,10:40,11:24
-04
+   avail lists: 1:1,2:556,3:1607,4:1161,5:2028,6:261,7:35741,8:43,9:2236,10:40,1
+1:2410
  48193 multiletter control sequences out of 65536+600000
  405 fonts using 26942335 bytes
  128i,20n,116p,954b,1131s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1365,7 +1365,7 @@ ic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/gfsdidot/GFSDidot.pfb><
 e/texlive/texmf-dist/fonts/type1/public/pxfonts/pxbsy.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/pxfonts/pxsy.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/pxfonts/pxsya.pfb>
-Output written on template.pdf (1 page, 1298265 bytes).
+Output written on template.pdf (1 page, 1298418 bytes).
 
 PDF statistics: 104 PDF objects out of 1000 (max. 8388607)
  73 compressed objects within 1 object stream

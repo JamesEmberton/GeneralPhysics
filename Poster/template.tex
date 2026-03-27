@@ -26,7 +26,7 @@
 \usepackage[
 	orientation=portrait, % Portrait orientation
 	size=a1, % Paper size
-	scale=0.95, % Scale, it's important to adjust this so your content fits nicely in the template
+	scale=0.965, % Scale, it's important to adjust this so your content fits nicely in the template
 ]{beamerposter} % Use the beamerposter package to create the layout
 
 \usetheme{I6pd2} % Use the I6pd2 theme supplied with this template
@@ -80,7 +80,7 @@
 \hspace{0.015\textwidth}%
 \begin{minipage}{0.97\textwidth}
 \begin{block}{Abstract}
-This study modelled the spread of disease in Manchester, using a reaction-diffusion equation, comparing this to COVID-19 data in Boston. The main assumptions of the model were a constant population density, a recovery time of 14 days, and negligible effects on immunocompromised individuals. The Euler method was used to solve the equation numerically. Our model successfully recreated spatial disease spread when compared to COVID-19 data in Boston, although it diverged from the data after $\sim$30 days. Model extensions could involve including a travelling population, multiple outbreak centres and behavioural changes.
+This study modelled the spread of disease in Manchester, using a reaction-diffusion equation, comparing this to COVID-19 data in Boston. The main assumptions of the model were a constant population density, a recovery time of 7 days, and negligible effects on immunocompromised individuals. The Euler method was used to solve the equation numerically. Our model successfully recreated spatial disease spread when compared to COVID-19 data in Boston, although it diverged from the data after $\sim$30 days. Model extensions could involve including a travelling population, multiple outbreak centres and behavioural changes.
 \end{block}
 \end{minipage}
 
@@ -95,7 +95,7 @@ This study modelled the spread of disease in Manchester, using a reaction-diffus
 %----------------------------------------------------------------------------------------
             
 \begin{block}{Introduction}
-	Modelling disease spread is crucial for governments to develop effective contingency plans for large-scale pandemics. The UK's "inadequate response" to COVID-19 serves as evidence for poor governmental action \cite{Frowde2020FailPrepare}. Motivated by the need for better predictive tools, we attempted to model disease spread within Greater Manchester using a diffusion equation, chosen because the random large-scale motion of people is analogous to Brownian diffusion.
+	Modelling disease spread is crucial for governments to develop effective contingency plans for large-scale pandemics. The UK's "inadequate response" to COVID-19 serves as evidence for poor governmental action~\cite{Frowde2020FailPrepare}. Motivated by the need for better predictive tools, we attempted to model disease spread within Greater Manchester using a diffusion equation, chosen because the random large-scale motion of people is analogous to Brownian diffusion.
 	
 	\bigskip
 	
@@ -113,7 +113,7 @@ This study modelled the spread of disease in Manchester, using a reaction-diffus
 	\begin{equation}
 		\pdv{u}{t} = D\grad^2u + R,
 	\end{equation}
-	where $u = u(x,y,t)$ is some unknown function, $D$ is a matrix of diffusion coefficients, modelling the net movement of particles from an area of high concentration to an area of low concentration, and $R = R(u, x, y, t)$ is the reaction term, which models how particles change from one type to another \cite{turing1952chemical}. This equation is ideal for modelling disease spread since, on a large scale, the motion of people can be assumed to be random.
+	where $u = u(x,y,t)$ is some unknown function, $D$ is a matrix of diffusion coefficients, modelling the net movement of particles from an area of high concentration to an area of low concentration, and $R = R(u, x, y, t)$ is the reaction term, which models how particles change from one type to another~\cite{turing1952chemical}. This equation is ideal for modelling disease spread since, on a large scale, the motion of people can be assumed to be random.
 	
 	\bigskip
 	
@@ -154,7 +154,7 @@ This study modelled the spread of disease in Manchester, using a reaction-diffus
 	
 	\bigskip
 	
-	The Euler method was used to solve equation \eqref{eq:6}, calculating the total $S$, $I$, and $R$ fields. The Euler method is a first-order numerical procedure to for solving ordinary differential equations \cite{euler1768institutiones}. 
+	The Euler method was used to solve equation \eqref{eq:6}, calculating the total $S$, $I$, and $R$ fields. The Euler method is a first-order numerical procedure to for solving ordinary differential equations~\cite{euler1768institutiones}. 
 \end{block}
 
 \begin{block}{Results: Model Figure}
@@ -168,9 +168,9 @@ This study modelled the spread of disease in Manchester, using a reaction-diffus
 \end{block}
 
 \begin{block}{Results: Simulation vs Data}
-	Infection of COVID-19 was modelled in Greater Manchester with an initial transmissibility of $\beta_0 = 0.48$~per day taking into account weather effects \cite{TALIB2021}
+	Infection of COVID-19 was modelled in Greater Manchester with an initial transmissibility of $\beta_0 = 0.48$~per day taking into account weather effects~\cite{TALIB2021}
 	while using a diffusion coefficient of $D=0.85$~m$^{2}$~s$^{-1}$, and a mean recovery time of $\tau = 7$~days \cite{NHS2023}
-	and using the spatial density given for each county of Greater Manchester from the March 2021 Census data \cite{CENSUS2021}.
+	and using the spatial density given for each county of Greater Manchester from the March 2021 Census data~\cite{CENSUS2021}.
 	The model was compared to the COVID-19 infection map of Boston \cite{KUMAR2021} as it is a city of comparable size thus allowing us to 
 	clearly compare the accuracy of our model. As seen our model is comparable to the Boston infection map up to the first 30 days.
 	At later times, the model diverges from real data. While our model predicts rapid decrease in the infected population, whereas in real outbreaks, as in figure \ref{Boston_data}, the infection remains for significantly longer when compared to our simulation.
@@ -198,7 +198,7 @@ This study modelled the spread of disease in Manchester, using a reaction-diffus
 \end{block}
 
 \begin{block}{Discussion}
-We found that our model was successful at modelling the initial spread of the COVID-19 pandemic. In particular, the initial growth seen in Fig.\ref{model} matches near perfectly data seen in Fig. \ref{Boston_data}. However, after this, the model starts to diverge from real life data. This is likely due to our assumption that people wouldn't isolate. In reality, as time went on, and more was understood about Covid, people started to self isolate when they first experienced symptoms, and the first lockdowns started to occur in March 2020 \cite{iog}. However, this doesn’t make the idea of using reaction-diffusion useless or invalid in all cases. Instead, it implies that the best use of such a model is to predict what would happen should the spread of the virus not be contained for the initial spread. 
+We found that our model was successful at modelling the initial spread of the COVID-19 pandemic. In particular, the initial growth seen in figure \ref{model} matches near perfectly data seen in figure \ref{Boston_data}. However, after this, the model starts to diverge from real life data. This is likely due to our assumption that people wouldn't isolate. In reality, as time went on, and more was understood about Covid, people started to self isolate when they first experienced symptoms, and the first lockdowns started to occur in March 2020 \cite{iog}. However, this doesn’t make the idea of using reaction-diffusion useless or invalid in all cases. Instead, it implies that the best use of such a model is to predict what would happen should the spread of the virus not be contained for the initial spread. 
 
 \bigskip
 
@@ -229,7 +229,7 @@ A reaction-diffusion model also fails to account for the virus, “Sticking arou
 	\bibliography{sample.bib} % Bibliography file
 \end{block}
 
-\vspace{5em}
+\vspace{2.5em}
 	\includegraphics[width=\linewidth]{group.png}
 
 %----------------------------------------------------------------------------------------
