@@ -1233,7 +1233,7 @@ LaTeX Font Warning: Font shape `TU/pxss/m/it' undefined
 (Font)              using `TU/pxss/m/n' instead on input line 7.
 
 )
-Overfull \vbox (80.95303pt too high) detected at line 240
+Overfull \vbox (14.11491pt too high) detected at line 240
  []
 
 
@@ -1276,7 +1276,7 @@ Here is how much of LuaTeX's memory you used:
 t, 10 write, 214 pdf_literal, 15 pdf_start_link, 15 pdf_end_link, 12 pdf_dest, 1
 5 pdf_action, 322 pdf_colorstack, 3 pdf_setmatrix, 3 pdf_save, 3 pdf_restore nod
 es
-   avail lists: 1:1,2:556,3:1580,4:1161,5:2043,6:258,7:35987,8:43,9:2221,10:37,1
+   avail lists: 1:2,2:556,3:1580,4:1161,5:2043,6:258,7:35987,8:43,9:2221,10:37,1
 1:2412
  48047 multiletter control sequences out of 65536+600000
  405 fonts using 26942335 bytes
@@ -1292,7 +1292,7 @@ ic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/gfsdidot/GFSDidot.pfb><
 e/texlive/texmf-dist/fonts/type1/public/pxfonts/pxbsy.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/pxfonts/pxsy.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/pxfonts/pxsya.pfb>
-Output written on template.pdf (1 page, 1242354 bytes).
+Output written on template.pdf (1 page, 1242328 bytes).
 
 PDF statistics: 102 PDF objects out of 1000 (max. 8388607)
  73 compressed objects within 1 object stream
