@@ -141,12 +141,12 @@ This study modelled the spread of disease in Manchester, using a reaction-diffus
 	\end{equation}
 	where $\tau$ is the recovery time. This allows us to obtain the final differential equation,
 	\begin{equation}
-		\pdv{I}{t} = D\grad^2 u(x,y,t) + \beta_0\rho(x,y)SI - \gamma I. \label{eq:6}
+		\pdv{I}{t} = D\grad^2 I + \beta_0\rho(x,y)SI - \gamma I. \label{eq:6}
 	\end{equation}
 	We chose to model COVID-19, since a large amount of data on its spread is available to compare the model to, as well as its high rate of infection.
 \end{block}
 \begin{block}{Theory - Numerical Methods}
-	The system of equations was discretised using the method of lines and a five-point stencil, meaning each spatial cell has four nearest-neighbours that contribute to its spatial gradient, as below,
+	The system of equations was discretised using the method of lines into a 150$\times$150 grid and a five-point stencil, meaning each spatial cell has four nearest-neighbours that contribute to its spatial gradient, as below,
 	\begin{equation}
 		\grad^2I \approx I_{i+1,j} + I_{i-1,j} + I_{i,j+1} + I_{i,j-1} - 4I_{i,j}.
 	\end{equation}
